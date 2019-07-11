@@ -1,0 +1,11 @@
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\bin\Debug\901DD.exe.config
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\bin\Debug\901DD.exe
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\bin\Debug\901DD.pdb
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\901DD.csprojAssemblyReference.cache
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\901DD.csproj.ResolveComReference.cache
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\_901DD.Form1.resources
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\_901DD.Properties.Resources.resources
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\901DD.csproj.GenerateResource.cache
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\901DD.csproj.CoreCompileInputs.cache
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\901DD.exe
+C:\Users\bbayrakli\Desktop\My_Repo\901D\901DD\obj\Debug\901DD.pdb
