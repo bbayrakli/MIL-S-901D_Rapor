@@ -816,46 +816,49 @@ namespace _901DD
             find.Format = true;
             find.Replacement.Text = emy_3_m.ToString();
             find.Execute(Replace: WdReplace.wdReplaceAll);
+            //=========================================================================================================================
+            //RESİMLERİ EKLEME (hemen öncesine Excel tablolarından jpg oluşturma kodları eklenecek.)!!!
+            //=========================================================================================================================
 
-            Clipboard.SetImage(Image.FromFile(@"C:\users\bbayrakli\desktop\rapor_otomasyon\pic_01.jpg"));
+            int width = 800, height = 400, i = 1;
 
-            
-            var sel = wrd.Selection;
-            sel.Find.Text = string.Format("pic_01");
-            sel.Find.Execute(Replace: WdReplace.wdReplaceNone);
-            sel.Range.Select();
+            while (doc.Content.Text.Contains("pic_" + i) && File.Exists(@"C:\users\bbayrakli\desktop\rapor_otomasyon\pic_" + i + ".jpg"))
+            {
+                using (Image image = Image.FromFile(@"C:\users\bbayrakli\desktop\rapor_otomasyon\pic_" + i + ".jpg"))
+                {
+                    new Bitmap(image, width, height).Save(@"C:\users\bbayrakli\desktop\rapor_otomasyon\hazirlik\pic_" + i + ".jpg");
+                }
+                Clipboard.SetImage(Image.FromFile(@"C:\users\bbayrakli\desktop\rapor_otomasyon\hazirlik\pic_" + i + ".jpg"));
+                var sel = wrd.Selection;
+                sel.Find.Text = string.Format("pic_" + i);
+                sel.Find.Execute(Replace: WdReplace.wdReplaceNone);
+                sel.Range.Select();
+                var xxx = wrd.Selection;
+                xxx.Paste();
+                i++;
+            }
 
-
-            //This code inserts the image
-            var xxx = wrd.Selection;
-            xxx.Paste();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            //=========================================================================================================================
+            //RFQ ADIYLA WORD DOSYASINI KAYDET
+            //=========================================================================================================================
             wrd.Visible = true;
             doc.SaveAs2(@"C:\users\bbayrakli\desktop\Raporlar\901D\" + rfq_1);
 
 
 
-
-
-
-
-
-
+            //GEÇİCİ HATIRLATMA NOTLARI==========================================SİLİNECEK===========================> 11.07.2019 23:32
+            //boyutları farklı olması gereken resimler için ayrıca kodlanmalı.
+            //"pic_n.jpg" formatında rapor_otomasyon klasörü içerisine kaydedilen resimi yeniden boyutlandırıp
+            //rapor_otomasyon\hazirlik içerisine aynı isimle kaydediyor.
+            //rapor_otomasyon\hazirlik içine kaydedilen resmi raporda ilgili değişkenin yerine yapıştırıyor.
+            //uzun sürebilmesi durumu için progress bar eklenecek.
+            //kanal tanımlama görseli ve kalibrasyon sertifikası gibi farklı boyutlarda olabilecek resimler unutulmamalı. 
+            //bu döngüden her resimaynı boyutta çıkar.
+            //Excel grafiklerinden jpg kaydetme, header ve footer konusu Yunus'ta. ondan alacağım.
+            
 
         }
     }
-    }
+}
+
 
