@@ -21,8 +21,31 @@ namespace _901DD
         {
             InitializeComponent();
         }
+        public void Button2_Click_1(object sender, EventArgs e)
+        {
 
-        private void Button1_Click(object sender, EventArgs e)
+            WrdFile.ShowDialog();
+            FPath.Text = WrdFile.FileName;
+        }
+        public void Button3_Click(object sender, EventArgs e)
+        {
+            
+            jpgFolder.ShowDialog();
+            picPath.Text = jpgFolder.SelectedPath;
+        }
+        public void Button4_Click(object sender, EventArgs e)
+        {
+            
+            graphFolder.ShowDialog();
+            graPath.Text = graphFolder.SelectedPath;
+        }
+        public void Button5_Click(object sender, EventArgs e)
+        {
+            SaveAs.ShowDialog();
+            SaveDir.Text = SaveAs.SelectedPath;
+        }
+
+        public void Button1_Click(object sender, EventArgs e)
         {
             string ekipman_adi, musteri_adi, kanal_1_seri, kanal_2_seri, kanal_3_seri, kanal_4_seri, seri_no, hazirlayan_1, musteri_adres, rfq_1, test_tar,
                    ekipman_tar, rapor_tar, grade_1, type_1, class_1, en_01, boy_01, yukseklik_01;
@@ -557,11 +580,12 @@ namespace _901DD
             }
 
             //=========================================================================================================================
-            //DEĞİŞKENLEİN DEĞERLERİ ATANDI
+            //DEĞİŞKENLERİN DEĞERLERİ ATANDI
             //=========================================================================================================================
+            
 
             Microsoft.Office.Interop.Word.Application wrd = new Microsoft.Office.Interop.Word.Application();
-            Microsoft.Office.Interop.Word.Document doc = wrd.Documents.Open(@"C:\users\bbayrakli\desktop\rapor_otomasyon\901D.docx");
+            Microsoft.Office.Interop.Word.Document doc = wrd.Documents.Open(WrdFile.FileName);
             //=========================================================================================================================
             //WORD ÜZERİNDEKİ DEĞİŞKENLERİ DEĞİŞTİRME
             //=========================================================================================================================
@@ -817,24 +841,49 @@ namespace _901DD
             find.Replacement.Text = emy_3_m.ToString();
             find.Execute(Replace: WdReplace.wdReplaceAll);
             //=========================================================================================================================
+            //HEADER ve FOOTER DEĞİŞİKLİKLERİ EKLENECEK !!!
+            //=========================================================================================================================
+           
+            
+
+
+
+
+            //=========================================================================================================================
             //RESİMLERİ EKLEME (hemen öncesine Excel tablolarından jpg oluşturma kodları eklenecek.)!!!
             //=========================================================================================================================
 
-            int width = 800, height = 400, i = 1;
+            double width, height, i = 1;
+            double c;
 
-            while (doc.Content.Text.Contains("pic_" + i) && File.Exists(@"C:\users\bbayrakli\desktop\rapor_otomasyon\pic_" + i + ".jpg"))
+            while (doc.Content.Text.Contains("<pic_" + i + ">") && File.Exists(jpgFolder.SelectedPath + @"\pic_" + i + ".jpg"))
             {
-                using (Image image = Image.FromFile(@"C:\users\bbayrakli\desktop\rapor_otomasyon\pic_" + i + ".jpg"))
+                using (Image image = Image.FromFile(jpgFolder.SelectedPath + @"\pic_" + i + ".jpg"))
                 {
-                    new Bitmap(image, width, height).Save(@"C:\users\bbayrakli\desktop\rapor_otomasyon\hazirlik\pic_" + i + ".jpg");
+                    c = (Convert.ToDouble(image.Size.Height) / Convert.ToDouble(image.Size.Width));
+
+                    width = Convert.ToDouble(image.Width);
+                    height = Convert.ToDouble(image.Height);
+
+                    if (c >= 1)
+                    {
+                        height = 600;
+                        width = height / c;
+                    }
+                    else
+                    {
+                        width = 600;
+                        height = width * c;
+                    }
+                                
+                 new Bitmap(image, Convert.ToInt32(width), Convert.ToInt32(height)).Save(jpgFolder.SelectedPath + @"\pic_0" + i + ".jpg");
                 }
-                Clipboard.SetImage(Image.FromFile(@"C:\users\bbayrakli\desktop\rapor_otomasyon\hazirlik\pic_" + i + ".jpg"));
+                Clipboard.SetImage(Image.FromFile(jpgFolder.SelectedPath + @"\pic_0" + i + ".jpg"));
                 var sel = wrd.Selection;
-                sel.Find.Text = string.Format("pic_" + i);
+                sel.Find.Text = string.Format("<pic_" + i + ">");
                 sel.Find.Execute(Replace: WdReplace.wdReplaceNone);
                 sel.Range.Select();
-                var xxx = wrd.Selection;
-                xxx.Paste();
+                sel.Paste();
                 i++;
             }
 
@@ -842,7 +891,7 @@ namespace _901DD
             //RFQ ADIYLA WORD DOSYASINI KAYDET
             //=========================================================================================================================
             wrd.Visible = true;
-            doc.SaveAs2(@"C:\users\bbayrakli\desktop\Raporlar\901D\" + rfq_1);
+            doc.SaveAs2(SaveAs.SelectedPath + @"\" + rfq_1);
 
 
 
@@ -855,9 +904,15 @@ namespace _901DD
             //kanal tanımlama görseli ve kalibrasyon sertifikası gibi farklı boyutlarda olabilecek resimler unutulmamalı. 
             //bu döngüden her resimaynı boyutta çıkar.
             //Excel grafiklerinden jpg kaydetme, header ve footer konusu Yunus'ta. ondan alacağım.
+
+            //=========================================================================================================> 12.07.2019 13:31
+            //Eğer resmin yüksekliği genişliğinden büyük ise farklı bir aspect ratio ayarlanabilir.
+            //=========================================================================================================>
             
 
         }
+
+        
     }
 }
 

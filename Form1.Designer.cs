@@ -78,6 +78,18 @@
             this.RFQ = new System.Windows.Forms.Label();
             this.rfq1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.WrdFile = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
+            this.FPath = new System.Windows.Forms.TextBox();
+            this.jpgFolder = new System.Windows.Forms.FolderBrowserDialog();
+            this.button3 = new System.Windows.Forms.Button();
+            this.picPath = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.graphFolder = new System.Windows.Forms.FolderBrowserDialog();
+            this.graPath = new System.Windows.Forms.TextBox();
+            this.SaveAs = new System.Windows.Forms.FolderBrowserDialog();
+            this.button5 = new System.Windows.Forms.Button();
+            this.SaveDir = new System.Windows.Forms.TextBox();
             this.Kanal.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -562,11 +574,107 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(471, 441);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click_1);
+            // 
+            // FPath
+            // 
+            this.FPath.Enabled = false;
+            this.FPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FPath.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.FPath.Location = new System.Drawing.Point(301, 443);
+            this.FPath.Name = "FPath";
+            this.FPath.ReadOnly = true;
+            this.FPath.Size = new System.Drawing.Size(164, 20);
+            this.FPath.TabIndex = 59;
+            this.FPath.Text = "Şablonu Göster";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(471, 470);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 60;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // picPath
+            // 
+            this.picPath.Enabled = false;
+            this.picPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.picPath.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.picPath.Location = new System.Drawing.Point(301, 472);
+            this.picPath.Name = "picPath";
+            this.picPath.ReadOnly = true;
+            this.picPath.Size = new System.Drawing.Size(164, 20);
+            this.picPath.TabIndex = 61;
+            this.picPath.Text = "Fotoğraflar";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(471, 499);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 62;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // graPath
+            // 
+            this.graPath.Enabled = false;
+            this.graPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.graPath.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.graPath.Location = new System.Drawing.Point(301, 501);
+            this.graPath.Name = "graPath";
+            this.graPath.ReadOnly = true;
+            this.graPath.Size = new System.Drawing.Size(164, 20);
+            this.graPath.TabIndex = 63;
+            this.graPath.Text = "Grafikler";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(471, 529);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 64;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // SaveDir
+            // 
+            this.SaveDir.Enabled = false;
+            this.SaveDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SaveDir.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.SaveDir.Location = new System.Drawing.Point(301, 531);
+            this.SaveDir.Name = "SaveDir";
+            this.SaveDir.ReadOnly = true;
+            this.SaveDir.Size = new System.Drawing.Size(164, 20);
+            this.SaveDir.TabIndex = 65;
+            this.SaveDir.Text = "Farklı Kaydet";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 565);
+            this.Controls.Add(this.SaveDir);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.graPath);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.picPath);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.FPath);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Kanal);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -644,6 +752,18 @@
         private System.Windows.Forms.Label RFQ;
         private System.Windows.Forms.TextBox rfq1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog WrdFile;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox FPath;
+        private System.Windows.Forms.FolderBrowserDialog jpgFolder;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox picPath;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.FolderBrowserDialog graphFolder;
+        private System.Windows.Forms.TextBox graPath;
+        private System.Windows.Forms.FolderBrowserDialog SaveAs;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox SaveDir;
     }
 }
 
