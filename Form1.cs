@@ -132,7 +132,7 @@ namespace _901DD
             toplam_kutle = ekipman_kutle + fikstur_kutle;
             double pound = toplam_kutle * 2.2;
             efikstu_kutle = Convert.ToDouble(efk_1.Text);
-            etopla_kutle = efikstu_kutle + ekipman_kutle;
+            etopla_kutle = efikstu_kutle + ekipman_kutle + fikstur_kutle;
             double epoun_1 = etopla_kutle * 2.2;
 
             progressBar1.Value = 20;
