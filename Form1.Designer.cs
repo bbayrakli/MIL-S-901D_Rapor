@@ -46,9 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.class_01 = new System.Windows.Forms.TextBox();
-            this.Type_01 = new System.Windows.Forms.TextBox();
-            this.grade_01 = new System.Windows.Forms.TextBox();
             this.raptar = new System.Windows.Forms.TextBox();
             this.ttarih = new System.Windows.Forms.TextBox();
             this.hzr_1 = new System.Windows.Forms.TextBox();
@@ -96,11 +93,26 @@
             this.label24 = new System.Windows.Forms.Label();
             this.info = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.grade_01 = new System.Windows.Forms.ComboBox();
+            this.class_01 = new System.Windows.Forms.ComboBox();
+            this.Type_01 = new System.Windows.Forms.ComboBox();
             this.Kanal.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Müşteri.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // Kanal
@@ -261,10 +273,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.class_01);
             this.groupBox2.Controls.Add(this.Type_01);
+            this.groupBox2.Controls.Add(this.class_01);
             this.groupBox2.Controls.Add(this.grade_01);
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.raptar);
             this.groupBox2.Controls.Add(this.ttarih);
             this.groupBox2.Controls.Add(this.hzr_1);
@@ -290,27 +302,6 @@
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 29;
             this.label7.Text = "Grade";
-            // 
-            // class_01
-            // 
-            this.class_01.Location = new System.Drawing.Point(119, 48);
-            this.class_01.Name = "class_01";
-            this.class_01.Size = new System.Drawing.Size(100, 20);
-            this.class_01.TabIndex = 18;
-            // 
-            // Type_01
-            // 
-            this.Type_01.Location = new System.Drawing.Point(119, 74);
-            this.Type_01.Name = "Type_01";
-            this.Type_01.Size = new System.Drawing.Size(100, 20);
-            this.Type_01.TabIndex = 19;
-            // 
-            // grade_01
-            // 
-            this.grade_01.Location = new System.Drawing.Point(119, 22);
-            this.grade_01.Name = "grade_01";
-            this.grade_01.Size = new System.Drawing.Size(100, 20);
-            this.grade_01.TabIndex = 17;
             // 
             // raptar
             // 
@@ -731,11 +722,162 @@
             this.button6.Visible = false;
             this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 48);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(130, 13);
+            this.label25.TabIndex = 70;
+            this.label25.Text = "pic_1 = Ekipman Fotoğrafı";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 61);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(212, 13);
+            this.label26.TabIndex = 71;
+            this.label26.Text = "pic_2 = Dikey Fiks. Üzeri Ekipman Fotoğrafı";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 89);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(133, 13);
+            this.label27.TabIndex = 72;
+            this.label27.Text = "pic_4 = Kanal Tanımlaması";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 102);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(176, 13);
+            this.label28.TabIndex = 73;
+            this.label28.Text = "pic_5 = İvmeölçer Bağlantıları Genel";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(6, 115);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(128, 13);
+            this.label29.TabIndex = 74;
+            this.label29.Text = "pic_6 = 1. Kanal Fotoğrafı";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(6, 128);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(128, 13);
+            this.label30.TabIndex = 75;
+            this.label30.Text = "pic_7 = 2. Kanal Fotoğrafı";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(6, 141);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(128, 13);
+            this.label31.TabIndex = 76;
+            this.label31.Text = "pic_8 = 3. Kanal Fotoğrafı";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 154);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(128, 13);
+            this.label32.TabIndex = 77;
+            this.label32.Text = "pic_9 = 4. Kanal Fotoğrafı";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(6, 76);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(206, 13);
+            this.label33.TabIndex = 78;
+            this.label33.Text = "pic_3 = Eğik Fiks. Üzeri Ekipman Fotoğrafı";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(6, 20);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(195, 13);
+            this.label34.TabIndex = 79;
+            this.label34.Text = "Fotoğrafları aşağıdaki isimlerle kaydedin.";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.label33);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Location = new System.Drawing.Point(544, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(224, 177);
+            this.groupBox4.TabIndex = 80;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "FOTOĞRAF AÇIKLAMALARI";
+            // 
+            // grade_01
+            // 
+            this.grade_01.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.grade_01.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.grade_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.grade_01.FormattingEnabled = true;
+            this.grade_01.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.grade_01.Location = new System.Drawing.Point(119, 22);
+            this.grade_01.Name = "grade_01";
+            this.grade_01.Size = new System.Drawing.Size(100, 21);
+            this.grade_01.TabIndex = 81;
+            // 
+            // class_01
+            // 
+            this.class_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.class_01.FormattingEnabled = true;
+            this.class_01.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III"});
+            this.class_01.Location = new System.Drawing.Point(119, 48);
+            this.class_01.Name = "class_01";
+            this.class_01.Size = new System.Drawing.Size(100, 21);
+            this.class_01.TabIndex = 81;
+            // 
+            // Type_01
+            // 
+            this.Type_01.BackColor = System.Drawing.Color.White;
+            this.Type_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Type_01.FormattingEnabled = true;
+            this.Type_01.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.Type_01.Location = new System.Drawing.Point(119, 74);
+            this.Type_01.Name = "Type_01";
+            this.Type_01.Size = new System.Drawing.Size(100, 21);
+            this.Type_01.TabIndex = 81;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 631);
+            this.ClientSize = new System.Drawing.Size(1041, 631);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.info);
             this.Controls.Add(this.label24);
@@ -768,6 +910,8 @@
             this.groupBox1.PerformLayout();
             this.Müşteri.ResumeLayout(false);
             this.Müşteri.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -791,9 +935,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox class_01;
-        private System.Windows.Forms.TextBox Type_01;
-        private System.Windows.Forms.TextBox grade_01;
         private System.Windows.Forms.TextBox raptar;
         private System.Windows.Forms.TextBox ttarih;
         private System.Windows.Forms.TextBox hzr_1;
@@ -843,6 +984,20 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label info;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox grade_01;
+        private System.Windows.Forms.ComboBox Type_01;
+        private System.Windows.Forms.ComboBox class_01;
     }
 }
 

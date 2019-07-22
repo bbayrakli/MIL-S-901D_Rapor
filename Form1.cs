@@ -137,7 +137,83 @@ namespace _901DD
 
             progressBar1.Value = 20;
             progressBar1.Update();
-            
+
+
+            if (ea_1.Text == "")
+            {
+                MessageBox.Show("Ekipman adı giriniz");
+                return;
+            }
+            if (ma_1.Text == "")
+            {
+                MessageBox.Show("Müşteri Adı giriniz");
+            }
+            if (eseri1.Text == "")
+            {
+                MessageBox.Show("Seri no giriniz");
+            }
+            if (hzr_1.Text == "")
+            {
+                MessageBox.Show("Hazırlayanı giriniz");
+            }
+            if (musteri_adresi.Text == "")
+            {
+                MessageBox.Show("Müşteri Adresi giriniz");
+            }
+            if (rfq1.Text == "")
+            {
+                MessageBox.Show("RFQ no giriniz");
+            }
+            if (ttarih.Text == "")
+            {
+                MessageBox.Show("Test Tarihi giriniz");
+            }
+            if (raptar.Text == "")
+            {
+                MessageBox.Show("Rapor Tarihi giriniz");
+            }
+            if (etarih.Text == "")
+            {
+                MessageBox.Show("Ekipman Kabul Tarihi giriniz");
+            }
+            if (class_01.Text == "")
+            {
+                MessageBox.Show("Class seçiniz");
+            }
+            if (Type_01.Text == "")
+            {
+                MessageBox.Show("Type seçiniz");
+            }
+            if (grade_01.Text == "")
+            {
+                MessageBox.Show("Grade seçiniz");
+            }
+            if (en_1.Text == "")
+            {
+                MessageBox.Show("Ekipman Enini giriniz");
+            }
+            if (boy_1.Text == "")
+            {
+                MessageBox.Show("Ekipman Boyunu giriniz");
+            }
+            if (yuk_1.Text == "")
+            {
+                MessageBox.Show("Ekipman Yüksekliğini giriniz");
+            }
+            if (ek_1.Text == "")
+            {
+                MessageBox.Show("Ekipman Kütlesini giriniz");
+            }
+            if (fk_1.Text == "")
+            {
+                MessageBox.Show("Fikstür Kütlesini giriniz");
+            }
+            if (efk_1.Text == "")
+            {
+                MessageBox.Show("Eğik Fikstür Toplam Kütlesini giriniz");
+            }
+
+
 
             //=========================================================================================================================
             //901D TABLO İŞLEMLERİ
@@ -801,7 +877,7 @@ namespace _901DD
             //=========================================================================================================================
             //Eğik Fikstür Pound Değeri Değiştir
             //=========================================================================================================================
-            find.Text = "<epoun_1>";
+            find.Text = "<egklbs_1>";
             find.Format = true;
             find.Replacement.Text = epoun_1.ToString();
             find.Execute(Replace: WdReplace.wdReplaceAll);
@@ -863,15 +939,24 @@ namespace _901DD
 
             progressBar1.Value = 50;
             progressBar1.Update();
-            
+
             //=========================================================================================================================
             //HEADER ve FOOTER DEĞİŞİKLİKLERİ EKLENECEK !!!
             //=========================================================================================================================
 
+            foreach (Microsoft.Office.Interop.Word.Section section in doc.Sections)
+            {
+                Microsoft.Office.Interop.Word.Range headerRange = section.Headers[Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
+                headerRange.Find.Text = "<rfq_1>";
+                headerRange.Find.Replacement.Text = rfq_1;
+                headerRange.Find.Execute(Replace: WdReplace.wdReplaceAll);
 
+                headerRange.Find.Text = "<ay_yil>";
+                headerRange.Find.Replacement.Text = Convert.ToString(DateTime.Now.Month+"-"+DateTime.Now.Year);
+                headerRange.Find.Execute(Replace: WdReplace.wdReplaceAll);
 
-
-
+            }
+                
 
             //=========================================================================================================================
             //RESİMLERİ EKLEME (hemen öncesine Excel tablolarından jpg oluşturma kodları eklenecek.)!!!
@@ -961,3 +1046,4 @@ namespace _901DD
 }
 
 
+// toplam kütle hesaplarını gözden geçir. gerekirse beam seçenekleri ekle... kütle hesabı kolaylaşmalı...
