@@ -110,6 +110,8 @@ namespace _901DD
         public Form1()
         {
             InitializeComponent();
+            
+            
         }
         public void Button2_Click_1(object sender, EventArgs e)
         {

@@ -14,9 +14,11 @@ C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\bin\Debug\901DD.exe
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\bin\Debug\901DD.pdb
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.csprojAssemblyReference.cache
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.csproj.ResolveComReference.cache
-C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.Form1.resources
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.Properties.Resources.resources
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.csproj.GenerateResource.cache
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.csproj.CoreCompileInputs.cache
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.exe
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.pdb
+C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.UserControl1.resources
+C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.Form1.resources
+C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.Form2.resources

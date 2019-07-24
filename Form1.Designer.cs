@@ -54,6 +54,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.etarih = new System.Windows.Forms.MaskedTextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ea_1 = new System.Windows.Forms.TextBox();
@@ -101,6 +102,13 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -119,15 +127,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.etarih = new System.Windows.Forms.MaskedTextBox();
             this.Kanal.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -420,6 +419,14 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekipman";
+            // 
+            // etarih
+            // 
+            this.etarih.Location = new System.Drawing.Point(119, 76);
+            this.etarih.Mask = "00/00/0000";
+            this.etarih.Name = "etarih";
+            this.etarih.Size = new System.Drawing.Size(127, 20);
+            this.etarih.TabIndex = 49;
             // 
             // label16
             // 
@@ -877,6 +884,76 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "FOTOĞRAF AÇIKLAMALARI";
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label39.Location = new System.Drawing.Point(6, 251);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(199, 13);
+            this.label39.TabIndex = 97;
+            this.label39.Text = "pic_16 = Yükseklik Ölçme Kal. Sertifikası";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label38.Location = new System.Drawing.Point(6, 238);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(199, 13);
+            this.label38.TabIndex = 96;
+            this.label38.Text = "pic_15 = Yükseklik Ölçme Kal. Sertifikası";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label36.Location = new System.Drawing.Point(6, 225);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(199, 13);
+            this.label36.TabIndex = 94;
+            this.label36.Text = "pic_14 = Yükseklik Ölçme Kal. Sertifikası";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label37.Location = new System.Drawing.Point(6, 212);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(175, 13);
+            this.label37.TabIndex = 95;
+            this.label37.Text = "pic_13 = Vinç Kantar Kal. Sertifikası";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label23.Location = new System.Drawing.Point(6, 199);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(175, 13);
+            this.label23.TabIndex = 92;
+            this.label23.Text = "pic_12 = Vinç Kantar Kal. Sertifikası";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label35.Location = new System.Drawing.Point(6, 186);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(175, 13);
+            this.label35.TabIndex = 93;
+            this.label35.Text = "pic_11 = Vinç Kantar Kal. Sertifikası";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(6, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(179, 13);
+            this.label3.TabIndex = 91;
+            this.label3.Text = "pic_10 = Fonksiyonel Test Düzeneği";
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -1108,97 +1185,11 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Title = "Excel Dosyası Seç";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(6, 173);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 13);
-            this.label3.TabIndex = 91;
-            this.label3.Text = "pic_10 = Fonksiyonel Test Düzeneği";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(6, 199);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(175, 13);
-            this.label23.TabIndex = 92;
-            this.label23.Text = "pic_12 = Vinç Kantar Kal. Sertifikası";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label35.Location = new System.Drawing.Point(6, 186);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(175, 13);
-            this.label35.TabIndex = 93;
-            this.label35.Text = "pic_11 = Vinç Kantar Kal. Sertifikası";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label36.Location = new System.Drawing.Point(6, 225);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(199, 13);
-            this.label36.TabIndex = 94;
-            this.label36.Text = "pic_14 = Yükseklik Ölçme Kal. Sertifikası";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label37.Location = new System.Drawing.Point(6, 212);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(175, 13);
-            this.label37.TabIndex = 95;
-            this.label37.Text = "pic_13 = Vinç Kantar Kal. Sertifikası";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label38.Location = new System.Drawing.Point(6, 238);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(199, 13);
-            this.label38.TabIndex = 96;
-            this.label38.Text = "pic_15 = Yükseklik Ölçme Kal. Sertifikası";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label39.Location = new System.Drawing.Point(6, 251);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(199, 13);
-            this.label39.TabIndex = 97;
-            this.label39.Text = "pic_16 = Yükseklik Ölçme Kal. Sertifikası";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(224, 9);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 91;
-            // 
-            // etarih
-            // 
-            this.etarih.Location = new System.Drawing.Point(119, 76);
-            this.etarih.Mask = "00/00/0000";
-            this.etarih.Name = "etarih";
-            this.etarih.Size = new System.Drawing.Size(127, 20);
-            this.etarih.TabIndex = 49;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 425);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox6);
@@ -1345,7 +1336,6 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox etarih;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
 
