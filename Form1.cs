@@ -117,6 +117,13 @@ namespace _901DD
             WrdFile.ShowDialog();
             FPath.Text = WrdFile.FileName;
         }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            textBox1.Text = openFileDialog1.FileName;
+        }
+
         public void Button3_Click(object sender, EventArgs e)
         {
             
@@ -141,7 +148,7 @@ namespace _901DD
             string ekipman_adi, musteri_adi, kanal_1_seri, kanal_2_seri, kanal_3_seri, kanal_4_seri, seri_no, hazirlayan_1, musteri_adres, rfq_1, test_tar,
                    ekipman_tar, rapor_tar, grade_1, type_1, class_1, en_01, boy_01, yukseklik_01;
 
-            double ekipman_kutle, fikstur_kutle, toplam_kutle, egikfiks_kutle, egik_kutle_toplam, clamps, egik_clamp,
+            double ekipman_kutle, fikstur_kutle, toplam_kutle, egikfiks_kutle, egik_kutle_toplam, clamps, egik_clamp, ekpmfkst,
                     dcy_1, dcy_2, dcy_3, ecy_1, ecy_2, ecy_3, dmy_1_m, dmy_2_m, dmy_3_m, emy_1_m, emy_2_m, emy_3_m;
 
             progressBar1.Value = 10;
@@ -226,6 +233,7 @@ namespace _901DD
             egikfiks_kutle = 771;
             egik_kutle_toplam = egikfiks_kutle + ekipman_kutle + fikstur_kutle + egik_clamp;
             double egiklbs_1 = egik_kutle_toplam * 2.2;
+            ekpmfkst = ekipman_kutle + fikstur_kutle;
 
             progressBar1.Value = 20;
             progressBar1.Update();
@@ -978,9 +986,9 @@ namespace _901DD
             find.Replacement.Text = Convert.ToString(clamps);
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
-            find.Text = "<egik_clamp>"; //eğik fikstür beamler, civatalar ve clampler toplamı
+            find.Text = "<ekpmfkst_kutle>";
             find.Format = true;
-            find.Replacement.Text = Convert.ToString(egik_clamp);
+            find.Replacement.Text = Convert.ToString(ekpmfkst);
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
             //=========================================================================================================================
@@ -1004,7 +1012,7 @@ namespace _901DD
             //=========================================================================================================================
             find.Text = "<efikstu_kutle>";
             find.Format = true;
-            find.Replacement.Text = egikfiks_kutle.ToString();
+            find.Replacement.Text = Convert.ToString(egikfiks_kutle + egik_clamp);
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
             //=========================================================================================================================
@@ -1100,9 +1108,40 @@ namespace _901DD
 
             }
 
-
             //=========================================================================================================================
-            //RESİMLERİ EKLEME (hemen öncesine Excel tablolarından jpg oluşturma kodları eklenecek.)!!!
+            //EXCEL GRAFİKLERİNİ .JPG KAYDETME
+            //=========================================================================================================================
+
+                
+                Microsoft.Office.Interop.Excel.Application exc = new Microsoft.Office.Interop.Excel.Application();
+                exc.Visible = false;
+                exc.Workbooks.Open(textBox1.Text);
+                Worksheet sheet = exc.Worksheets[1];
+                sheet.Activate();
+
+                foreach (Worksheet ws in exc.Worksheets)
+                {
+                    ChartObjects chartobjects = ws.ChartObjects();
+
+                    foreach (ChartObject co in chartobjects)
+                    {
+                        co.Select();
+                        Microsoft.Office.Interop.Excel.Chart chart = co.Chart;
+                        chart.Export(graphFolder.SelectedPath + @"\" + chart.Name + ".jpg");
+
+                    }
+                }
+                exc.Workbooks.Close();
+            
+            //=========================================================================================================================
+            //GRAFİKLERİ EKLEME
+            //=========================================================================================================================
+            double graphwidth, graphheight, j = 1;
+            double p;
+
+            
+            //=========================================================================================================================
+            //RESİMLERİ EKLEME 
             //=========================================================================================================================
             #region
             info.Text = "...resimler yükleniyor.";
@@ -1110,7 +1149,7 @@ namespace _901DD
             double width, height, i = 1;
             double c;
 
-            while (doc.Content.Text.Contains("<pic_" + i + ">") && File.Exists(jpgFolder.SelectedPath + @"\pic_" + i + ".jpg"))
+            while (File.Exists(jpgFolder.SelectedPath + @"\pic_" + i + ".jpg"))
             {
                 using (Image image = Image.FromFile(jpgFolder.SelectedPath + @"\pic_" + i + ".jpg"))
                 {
@@ -1132,12 +1171,9 @@ namespace _901DD
                                 
                  new Bitmap(image, Convert.ToInt32(width), Convert.ToInt32(height)).Save(jpgFolder.SelectedPath + @"\pic_0" + i + ".jpg");
                 }
-                Clipboard.SetImage(Image.FromFile(jpgFolder.SelectedPath + @"\pic_0" + i + ".jpg"));
-                var sel = wrd.Selection;
-                sel.Find.Text = string.Format("<pic_" + i + ">");
-                sel.Find.Execute(Replace: WdReplace.wdReplaceNone);
-                sel.Range.Select();
-                sel.Paste();
+
+                object rng = doc.Bookmarks["pic_" + i].Range;
+                doc.InlineShapes.AddPicture(jpgFolder.SelectedPath + @"\pic_0" + i + ".jpg",false,true, ref rng);
                 i++;
 
                 progressBar1.Value = 50 + Convert.ToInt32(i);
@@ -1183,7 +1219,7 @@ namespace _901DD
         public void Button6_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(SaveAs.SelectedPath);
-
+            
 
         }
     }
