@@ -1139,7 +1139,37 @@ namespace _901DD
             double graphwidth, graphheight, j = 1;
             double p;
 
-            
+            while (File.Exists(graphFolder.SelectedPath + @"\Vurus01_Time_History Chart " + j + ".jpg"))
+            {
+                using (Image image = Image.FromFile(graphFolder.SelectedPath + @"\Vurus01_Time_History Chart "+j+".jpg"))
+                {
+                    p = (Convert.ToDouble(image.Size.Height) / Convert.ToDouble(image.Size.Width));
+
+                    graphwidth = Convert.ToDouble(image.Width);
+                    graphheight = Convert.ToDouble(image.Height);
+
+                    if (p >= 1)
+                    {
+                        graphheight = 600;
+                        graphwidth = graphheight / p;
+                    }
+                    else
+                    {
+                        graphwidth = 600;
+                        graphheight = graphwidth * p;
+                    }
+
+                    new Bitmap(image, Convert.ToInt32(graphwidth), Convert.ToInt32(graphheight)).Save(graphFolder.SelectedPath + @"\graph_" + j + ".jpg");
+                }
+
+                object range = doc.Bookmarks["grp_" + j].Range;
+                doc.InlineShapes.AddPicture(graphFolder.SelectedPath + @"\graph_" + j + ".jpg", false, true, ref range);
+                j++;
+
+               
+
+            }
+
             //=========================================================================================================================
             //RESİMLERİ EKLEME 
             //=========================================================================================================================
