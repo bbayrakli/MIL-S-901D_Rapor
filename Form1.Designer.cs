@@ -37,14 +37,13 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.fk_1 = new System.Windows.Forms.TextBox();
-            this.efk_1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Type_01 = new System.Windows.Forms.ComboBox();
+            this.class_01 = new System.Windows.Forms.ComboBox();
+            this.grade_01 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.raptar = new System.Windows.Forms.TextBox();
             this.ttarih = new System.Windows.Forms.TextBox();
@@ -75,7 +74,6 @@
             this.musteri_adresi = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.RFQ = new System.Windows.Forms.Label();
-            this.rfq1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.WrdFile = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
@@ -104,15 +102,28 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.grade_01 = new System.Windows.Forms.ComboBox();
-            this.class_01 = new System.Windows.Forms.ComboBox();
-            this.Type_01 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.rfq1 = new System.Windows.Forms.TextBox();
             this.Kanal.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Müşteri.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // Kanal
@@ -126,46 +137,46 @@
             this.Kanal.Controls.Add(this.label19);
             this.Kanal.Controls.Add(this.label20);
             this.Kanal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Kanal.Location = new System.Drawing.Point(6, 422);
+            this.Kanal.Location = new System.Drawing.Point(544, 150);
             this.Kanal.Name = "Kanal";
-            this.Kanal.Size = new System.Drawing.Size(280, 130);
+            this.Kanal.Size = new System.Drawing.Size(181, 132);
             this.Kanal.TabIndex = 5;
             this.Kanal.TabStop = false;
             this.Kanal.Text = "Kanal";
             // 
             // ch1
             // 
-            this.ch1.Location = new System.Drawing.Point(119, 19);
+            this.ch1.Location = new System.Drawing.Point(96, 22);
             this.ch1.Name = "ch1";
-            this.ch1.Size = new System.Drawing.Size(127, 20);
+            this.ch1.Size = new System.Drawing.Size(73, 20);
             this.ch1.TabIndex = 13;
             // 
             // ch4
             // 
-            this.ch4.Location = new System.Drawing.Point(119, 97);
+            this.ch4.Location = new System.Drawing.Point(96, 100);
             this.ch4.Name = "ch4";
-            this.ch4.Size = new System.Drawing.Size(127, 20);
+            this.ch4.Size = new System.Drawing.Size(73, 20);
             this.ch4.TabIndex = 16;
             // 
             // ch3
             // 
-            this.ch3.Location = new System.Drawing.Point(119, 71);
+            this.ch3.Location = new System.Drawing.Point(96, 74);
             this.ch3.Name = "ch3";
-            this.ch3.Size = new System.Drawing.Size(127, 20);
+            this.ch3.Size = new System.Drawing.Size(73, 20);
             this.ch3.TabIndex = 15;
             // 
             // ch2
             // 
-            this.ch2.Location = new System.Drawing.Point(119, 45);
+            this.ch2.Location = new System.Drawing.Point(96, 48);
             this.ch2.Name = "ch2";
-            this.ch2.Size = new System.Drawing.Size(127, 20);
+            this.ch2.Size = new System.Drawing.Size(73, 20);
             this.ch2.TabIndex = 14;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(11, 100);
+            this.label18.Location = new System.Drawing.Point(6, 103);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(84, 13);
             this.label18.TabIndex = 40;
@@ -175,7 +186,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(11, 24);
+            this.label21.Location = new System.Drawing.Point(6, 27);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(84, 13);
             this.label21.TabIndex = 43;
@@ -185,7 +196,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(11, 74);
+            this.label19.Location = new System.Drawing.Point(6, 77);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(84, 13);
             this.label19.TabIndex = 41;
@@ -195,77 +206,34 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(11, 48);
+            this.label20.Location = new System.Drawing.Point(6, 51);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(84, 13);
             this.label20.TabIndex = 42;
             this.label20.Text = "2. Kanal Seri No";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.fk_1);
-            this.groupBox3.Controls.Add(this.efk_1);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.Location = new System.Drawing.Point(6, 316);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(280, 100);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Fikstür";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(252, 29);
+            this.label10.Location = new System.Drawing.Point(252, 159);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 13);
             this.label10.TabIndex = 48;
             this.label10.Text = "kg";
             // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(252, 55);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(19, 13);
-            this.label23.TabIndex = 49;
-            this.label23.Text = "kg";
-            // 
             // fk_1
             // 
-            this.fk_1.Location = new System.Drawing.Point(119, 26);
+            this.fk_1.Location = new System.Drawing.Point(119, 156);
             this.fk_1.Name = "fk_1";
             this.fk_1.Size = new System.Drawing.Size(127, 20);
             this.fk_1.TabIndex = 11;
-            // 
-            // efk_1
-            // 
-            this.efk_1.Location = new System.Drawing.Point(119, 52);
-            this.efk_1.Name = "efk_1";
-            this.efk_1.Size = new System.Drawing.Size(127, 20);
-            this.efk_1.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(10, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Eğik Fikstür Kütlesi";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(10, 29);
+            this.label4.Location = new System.Drawing.Point(6, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 26;
@@ -293,11 +261,52 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Test";
             // 
+            // Type_01
+            // 
+            this.Type_01.BackColor = System.Drawing.Color.White;
+            this.Type_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Type_01.FormattingEnabled = true;
+            this.Type_01.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.Type_01.Location = new System.Drawing.Point(119, 76);
+            this.Type_01.Name = "Type_01";
+            this.Type_01.Size = new System.Drawing.Size(100, 21);
+            this.Type_01.TabIndex = 81;
+            // 
+            // class_01
+            // 
+            this.class_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.class_01.FormattingEnabled = true;
+            this.class_01.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III"});
+            this.class_01.Location = new System.Drawing.Point(119, 50);
+            this.class_01.Name = "class_01";
+            this.class_01.Size = new System.Drawing.Size(100, 21);
+            this.class_01.TabIndex = 81;
+            // 
+            // grade_01
+            // 
+            this.grade_01.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.grade_01.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.grade_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.grade_01.FormattingEnabled = true;
+            this.grade_01.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.grade_01.Location = new System.Drawing.Point(119, 24);
+            this.grade_01.Name = "grade_01";
+            this.grade_01.Size = new System.Drawing.Size(100, 21);
+            this.grade_01.TabIndex = 81;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(6, 25);
+            this.label7.Location = new System.Drawing.Point(6, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 29;
@@ -305,21 +314,21 @@
             // 
             // raptar
             // 
-            this.raptar.Location = new System.Drawing.Point(119, 126);
+            this.raptar.Location = new System.Drawing.Point(119, 128);
             this.raptar.Name = "raptar";
             this.raptar.Size = new System.Drawing.Size(100, 20);
             this.raptar.TabIndex = 21;
             // 
             // ttarih
             // 
-            this.ttarih.Location = new System.Drawing.Point(119, 100);
+            this.ttarih.Location = new System.Drawing.Point(119, 102);
             this.ttarih.Name = "ttarih";
             this.ttarih.Size = new System.Drawing.Size(100, 20);
             this.ttarih.TabIndex = 20;
             // 
             // hzr_1
             // 
-            this.hzr_1.Location = new System.Drawing.Point(119, 154);
+            this.hzr_1.Location = new System.Drawing.Point(119, 156);
             this.hzr_1.Name = "hzr_1";
             this.hzr_1.Size = new System.Drawing.Size(100, 20);
             this.hzr_1.TabIndex = 22;
@@ -328,7 +337,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(6, 51);
+            this.label6.Location = new System.Drawing.Point(6, 53);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 28;
@@ -338,7 +347,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(6, 157);
+            this.label15.Location = new System.Drawing.Point(6, 159);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(56, 13);
             this.label15.TabIndex = 37;
@@ -348,7 +357,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(6, 103);
+            this.label9.Location = new System.Drawing.Point(6, 105);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 13);
             this.label9.TabIndex = 31;
@@ -358,7 +367,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(6, 129);
+            this.label14.Location = new System.Drawing.Point(6, 131);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 13);
             this.label14.TabIndex = 36;
@@ -368,7 +377,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(6, 77);
+            this.label13.Location = new System.Drawing.Point(6, 79);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(31, 13);
             this.label13.TabIndex = 35;
@@ -376,9 +385,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.fk_1);
             this.groupBox1.Controls.Add(this.ea_1);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.ek_1);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.yuk_1);
@@ -393,7 +405,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(6, 150);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 160);
+            this.groupBox1.Size = new System.Drawing.Size(280, 189);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekipman";
@@ -576,19 +588,12 @@
             this.RFQ.TabIndex = 52;
             this.RFQ.Text = "RFQ";
             // 
-            // rfq1
-            // 
-            this.rfq1.Location = new System.Drawing.Point(125, 6);
-            this.rfq1.Name = "rfq1";
-            this.rfq1.Size = new System.Drawing.Size(54, 20);
-            this.rfq1.TabIndex = 1;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(292, 345);
+            this.button1.Location = new System.Drawing.Point(731, 157);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(246, 71);
+            this.button1.Size = new System.Drawing.Size(180, 61);
             this.button1.TabIndex = 28;
             this.button1.Text = "RAPOR";
             this.button1.UseVisualStyleBackColor = true;
@@ -596,7 +601,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(471, 441);
+            this.button2.Location = new System.Drawing.Point(836, 288);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 23;
@@ -610,16 +615,16 @@
             this.FPath.Enabled = false;
             this.FPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FPath.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.FPath.Location = new System.Drawing.Point(301, 443);
+            this.FPath.Location = new System.Drawing.Point(544, 290);
             this.FPath.Name = "FPath";
             this.FPath.ReadOnly = true;
-            this.FPath.Size = new System.Drawing.Size(164, 20);
+            this.FPath.Size = new System.Drawing.Size(286, 20);
             this.FPath.TabIndex = 59;
             this.FPath.Text = "Şablonu Göster";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(471, 470);
+            this.button3.Location = new System.Drawing.Point(836, 317);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 24;
@@ -633,16 +638,16 @@
             this.picPath.Enabled = false;
             this.picPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.picPath.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.picPath.Location = new System.Drawing.Point(301, 472);
+            this.picPath.Location = new System.Drawing.Point(544, 319);
             this.picPath.Name = "picPath";
             this.picPath.ReadOnly = true;
-            this.picPath.Size = new System.Drawing.Size(164, 20);
+            this.picPath.Size = new System.Drawing.Size(286, 20);
             this.picPath.TabIndex = 61;
             this.picPath.Text = "Fotoğraflar";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(471, 499);
+            this.button4.Location = new System.Drawing.Point(836, 347);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 25;
@@ -656,16 +661,16 @@
             this.graPath.Enabled = false;
             this.graPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.graPath.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.graPath.Location = new System.Drawing.Point(301, 501);
+            this.graPath.Location = new System.Drawing.Point(544, 348);
             this.graPath.Name = "graPath";
             this.graPath.ReadOnly = true;
-            this.graPath.Size = new System.Drawing.Size(164, 20);
+            this.graPath.Size = new System.Drawing.Size(286, 20);
             this.graPath.TabIndex = 63;
             this.graPath.Text = "Grafikler";
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(471, 529);
+            this.button5.Location = new System.Drawing.Point(836, 376);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 27;
@@ -679,18 +684,18 @@
             this.SaveDir.Enabled = false;
             this.SaveDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SaveDir.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.SaveDir.Location = new System.Drawing.Point(301, 531);
+            this.SaveDir.Location = new System.Drawing.Point(544, 378);
             this.SaveDir.Name = "SaveDir";
             this.SaveDir.ReadOnly = true;
-            this.SaveDir.Size = new System.Drawing.Size(164, 20);
+            this.SaveDir.Size = new System.Drawing.Size(286, 20);
             this.SaveDir.TabIndex = 65;
             this.SaveDir.Text = "Farklı Kaydet";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(213, 6);
+            this.progressBar1.Location = new System.Drawing.Point(6, 345);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(325, 27);
+            this.progressBar1.Size = new System.Drawing.Size(532, 36);
             this.progressBar1.TabIndex = 66;
             // 
             // label24
@@ -705,26 +710,30 @@
             // info
             // 
             this.info.AutoSize = true;
-            this.info.Location = new System.Drawing.Point(6, 559);
+            this.info.BackColor = System.Drawing.Color.Transparent;
+            this.info.CausesValidation = false;
+            this.info.Location = new System.Drawing.Point(20, 357);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(0, 13);
+            this.info.Size = new System.Drawing.Size(24, 13);
             this.info.TabIndex = 68;
+            this.info.Text = "info";
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(292, 559);
+            this.button6.Enabled = false;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(731, 224);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(254, 60);
+            this.button6.Size = new System.Drawing.Size(180, 58);
             this.button6.TabIndex = 69;
-            this.button6.Text = "AÇ";
+            this.button6.Text = "KLASÖR AÇ";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
             this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label25.Location = new System.Drawing.Point(6, 48);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(130, 13);
@@ -734,6 +743,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label26.Location = new System.Drawing.Point(6, 61);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(212, 13);
@@ -743,6 +753,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label27.Location = new System.Drawing.Point(6, 89);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(133, 13);
@@ -752,6 +763,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label28.Location = new System.Drawing.Point(6, 102);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(176, 13);
@@ -761,6 +773,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label29.Location = new System.Drawing.Point(6, 115);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(128, 13);
@@ -770,6 +783,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label30.Location = new System.Drawing.Point(6, 128);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(128, 13);
@@ -779,6 +793,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label31.Location = new System.Drawing.Point(6, 141);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(128, 13);
@@ -788,6 +803,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label32.Location = new System.Drawing.Point(6, 154);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(128, 13);
@@ -797,6 +813,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label33.Location = new System.Drawing.Point(6, 76);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(206, 13);
@@ -806,6 +823,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label34.Location = new System.Drawing.Point(6, 20);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(195, 13);
@@ -824,59 +842,224 @@
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.label30);
             this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Location = new System.Drawing.Point(544, 6);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox4.Location = new System.Drawing.Point(917, 32);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(224, 177);
             this.groupBox4.TabIndex = 80;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "FOTOĞRAF AÇIKLAMALARI";
             // 
-            // grade_01
+            // checkBox1
             // 
-            this.grade_01.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.grade_01.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.grade_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.grade_01.FormattingEnabled = true;
-            this.grade_01.Items.AddRange(new object[] {
-            "A",
-            "B"});
-            this.grade_01.Location = new System.Drawing.Point(119, 22);
-            this.grade_01.Name = "grade_01";
-            this.grade_01.Size = new System.Drawing.Size(100, 21);
-            this.grade_01.TabIndex = 81;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox1.Location = new System.Drawing.Point(6, 33);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(112, 17);
+            this.checkBox1.TabIndex = 81;
+            this.checkBox1.Text = "1.6 m Beam Adedi";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
-            // class_01
+            // comboBox1
             // 
-            this.class_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.class_01.FormattingEnabled = true;
-            this.class_01.Items.AddRange(new object[] {
-            "I",
-            "II",
-            "III"});
-            this.class_01.Location = new System.Drawing.Point(119, 48);
-            this.class_01.Name = "class_01";
-            this.class_01.Size = new System.Drawing.Size(100, 21);
-            this.class_01.TabIndex = 81;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox1.Location = new System.Drawing.Point(124, 31);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(45, 21);
+            this.comboBox1.TabIndex = 82;
+            this.comboBox1.Visible = false;
             // 
-            // Type_01
+            // comboBox2
             // 
-            this.Type_01.BackColor = System.Drawing.Color.White;
-            this.Type_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Type_01.FormattingEnabled = true;
-            this.Type_01.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C"});
-            this.Type_01.Location = new System.Drawing.Point(119, 74);
-            this.Type_01.Name = "Type_01";
-            this.Type_01.Size = new System.Drawing.Size(100, 21);
-            this.Type_01.TabIndex = 81;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox2.Location = new System.Drawing.Point(124, 56);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(45, 21);
+            this.comboBox2.TabIndex = 84;
+            this.comboBox2.Visible = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox2.Location = new System.Drawing.Point(6, 60);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(112, 17);
+            this.checkBox2.TabIndex = 83;
+            this.checkBox2.Text = "2.0 m Beam Adedi";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox3.Location = new System.Drawing.Point(124, 85);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(45, 21);
+            this.comboBox3.TabIndex = 86;
+            this.comboBox3.Visible = false;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox3.Location = new System.Drawing.Point(6, 87);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(112, 17);
+            this.checkBox3.TabIndex = 85;
+            this.checkBox3.Text = "2.5 m Beam Adedi";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.checkBox1);
+            this.groupBox5.Controls.Add(this.comboBox3);
+            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.checkBox3);
+            this.groupBox5.Controls.Add(this.checkBox2);
+            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox5.Location = new System.Drawing.Point(544, 32);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(181, 112);
+            this.groupBox5.TabIndex = 87;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Dikey Fikstür";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.checkBox4);
+            this.groupBox6.Controls.Add(this.comboBox4);
+            this.groupBox6.Controls.Add(this.comboBox5);
+            this.groupBox6.Controls.Add(this.checkBox5);
+            this.groupBox6.Controls.Add(this.checkBox6);
+            this.groupBox6.Controls.Add(this.comboBox6);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox6.Location = new System.Drawing.Point(731, 32);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(180, 112);
+            this.groupBox6.TabIndex = 88;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Eğik Fikstür";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox4.Location = new System.Drawing.Point(6, 33);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(112, 17);
+            this.checkBox4.TabIndex = 81;
+            this.checkBox4.Text = "1.6 m Beam Adedi";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox4.Location = new System.Drawing.Point(124, 31);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(45, 21);
+            this.comboBox4.TabIndex = 86;
+            this.comboBox4.Visible = false;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox5.Location = new System.Drawing.Point(124, 58);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(45, 21);
+            this.comboBox5.TabIndex = 82;
+            this.comboBox5.Visible = false;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox5.Location = new System.Drawing.Point(6, 60);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(112, 17);
+            this.checkBox5.TabIndex = 85;
+            this.checkBox5.Text = "2.0 m Beam Adedi";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox5_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox6.Location = new System.Drawing.Point(6, 87);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(112, 17);
+            this.checkBox6.TabIndex = 83;
+            this.checkBox6.Text = "2.5 m Beam Adedi";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox6_CheckedChanged);
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox6.Location = new System.Drawing.Point(124, 85);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(45, 21);
+            this.comboBox6.TabIndex = 84;
+            this.comboBox6.Visible = false;
+            // 
+            // rfq1
+            // 
+            this.rfq1.AcceptsReturn = true;
+            this.rfq1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rfq1.Location = new System.Drawing.Point(125, 6);
+            this.rfq1.Name = "rfq1";
+            this.rfq1.Size = new System.Drawing.Size(82, 20);
+            this.rfq1.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1041, 631);
+            this.ClientSize = new System.Drawing.Size(1152, 421);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.info);
@@ -891,7 +1074,6 @@
             this.Controls.Add(this.FPath);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Kanal);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Müşteri);
@@ -902,8 +1084,6 @@
             this.Text = "Form1";
             this.Kanal.ResumeLayout(false);
             this.Kanal.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -912,6 +1092,10 @@
             this.Müşteri.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -928,10 +1112,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox fk_1;
-        private System.Windows.Forms.TextBox efk_1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
@@ -979,7 +1160,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox SaveDir;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label info;
@@ -998,6 +1178,20 @@
         private System.Windows.Forms.ComboBox grade_01;
         private System.Windows.Forms.ComboBox Type_01;
         private System.Windows.Forms.ComboBox class_01;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.ComboBox comboBox6;
     }
 }
 

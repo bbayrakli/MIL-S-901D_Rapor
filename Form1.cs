@@ -17,6 +17,96 @@ namespace _901DD
 {
     public partial class Form1 : Form
     {
+        #region
+
+        double beam160, beam200, beam250, beam_160, beam_200, beam_250;
+        public void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                comboBox1.Visible = true;
+                beam160 = (34 * Convert.ToDouble(comboBox1.SelectedItem));
+                
+            }
+            else
+            {
+                comboBox1.Visible = false;
+                beam160 = 0;
+            }
+        }
+
+        public void CheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                
+                comboBox2.Visible = true;
+                beam200 = (34 / 1.6 * 2 * Convert.ToDouble(comboBox2.SelectedItem));
+            }
+            else
+            {
+                comboBox2.Visible = false;
+                beam200 = 0;
+            }
+        }
+
+        public void CheckBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                comboBox3.Visible = true;
+                beam250 = (34 / 1.6 * 2.5 * Convert.ToDouble(comboBox3.SelectedItem));
+            }
+            else
+            {
+                comboBox3.Visible = false;
+                beam250 = 0;
+
+            }
+
+        }
+
+        public void CheckBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked)
+            {
+                comboBox4.Visible = true;
+                beam_160 = (34 * Convert.ToDouble(comboBox4.SelectedItem));
+            }
+            else
+            {
+                comboBox4.Visible = false;
+            }
+        }
+        public void CheckBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked)
+            {
+                comboBox5.Visible = true;
+                beam_200 = (34 / 1.6 * 2 * Convert.ToDouble(comboBox5.SelectedItem));
+            }
+            else
+            {
+                comboBox5.Visible = false;
+                beam_200 = 0;
+            }
+        }
+        public void CheckBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked)
+            {
+                comboBox6.Visible = true;
+                beam_250 = (34 / 1.6 * 2.5 * Convert.ToDouble(comboBox6.SelectedItem));
+            }
+            else
+            {
+                comboBox6.Visible = false;
+                beam_250 = 0;
+            }
+        }
+
+        #endregion
+
         public Form1()
         {
             InitializeComponent();
@@ -51,7 +141,7 @@ namespace _901DD
             string ekipman_adi, musteri_adi, kanal_1_seri, kanal_2_seri, kanal_3_seri, kanal_4_seri, seri_no, hazirlayan_1, musteri_adres, rfq_1, test_tar,
                    ekipman_tar, rapor_tar, grade_1, type_1, class_1, en_01, boy_01, yukseklik_01;
 
-            double ekipman_kutle, fikstur_kutle, toplam_kutle, efikstu_kutle, etopla_kutle,
+            double ekipman_kutle, fikstur_kutle, toplam_kutle, egikfiks_kutle, egik_kutle_toplam, clamps, egik_clamp,
                     dcy_1, dcy_2, dcy_3, ecy_1, ecy_2, ecy_3, dmy_1_m, dmy_2_m, dmy_3_m, emy_1_m, emy_2_m, emy_3_m;
 
             progressBar1.Value = 10;
@@ -89,8 +179,8 @@ namespace _901DD
             //toplam_kutle   = Toplam Kütle (Dikey)            = ekipman_kutle + fikstur_kutle
             //pound          = Ingiliz Ağırlık Birimi          = toplam_kutle * (2.204)
             //efikstu_kutle  = Eğik Fikstür Kütlesi            = efk_1.TExtbox
-            //etopla_kutle   = Eğik Fikstür Toplam Kütle       = efikstu_kutle + ekipman_kutle
-            //epoun_1        = Ingiliz Ağırlık Birimi          = etopla_kutle * (2.2)
+            //egik_kutle_toplam   = Eğik Fikstür Toplam Kütle       = efikstu_kutle + ekipman_kutle
+            //egiklbs_1        = Ingiliz Ağırlık Birimi          = egik_kutle_toplam * (2.2)
 
 
             //=========================================================================================================================
@@ -129,96 +219,135 @@ namespace _901DD
             yukseklik_01 = yuk_1.Text;
             ekipman_kutle = Convert.ToDouble(ek_1.Text);
             fikstur_kutle = Convert.ToDouble(fk_1.Text);
-            toplam_kutle = ekipman_kutle + fikstur_kutle;
+            clamps = beam160 + beam200 + beam250 + 40;
+            egik_clamp = beam_160 + beam_200 + beam_250 + 50;
+            toplam_kutle = ekipman_kutle + fikstur_kutle + clamps;
             double pound = toplam_kutle * 2.2;
-            efikstu_kutle = Convert.ToDouble(efk_1.Text);
-            etopla_kutle = efikstu_kutle + ekipman_kutle + fikstur_kutle;
-            double epoun_1 = etopla_kutle * 2.2;
+            egikfiks_kutle = 771;
+            egik_kutle_toplam = egikfiks_kutle + ekipman_kutle + fikstur_kutle + egik_clamp;
+            double egiklbs_1 = egik_kutle_toplam * 2.2;
 
             progressBar1.Value = 20;
             progressBar1.Update();
+            //=========================================================================================================================
+            //BOŞ ALAN UYARILARI
+            //=========================================================================================================================
 
+            #region
 
             if (ea_1.Text == "")
             {
                 MessageBox.Show("Ekipman adı giriniz");
+                System.Windows.Forms.Application.Exit();
                 return;
+                
             }
             if (ma_1.Text == "")
             {
                 MessageBox.Show("Müşteri Adı giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (eseri1.Text == "")
             {
                 MessageBox.Show("Seri no giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (hzr_1.Text == "")
             {
                 MessageBox.Show("Hazırlayanı giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (musteri_adresi.Text == "")
             {
                 MessageBox.Show("Müşteri Adresi giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (rfq1.Text == "")
             {
                 MessageBox.Show("RFQ no giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (ttarih.Text == "")
             {
                 MessageBox.Show("Test Tarihi giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (raptar.Text == "")
             {
                 MessageBox.Show("Rapor Tarihi giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (etarih.Text == "")
             {
                 MessageBox.Show("Ekipman Kabul Tarihi giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (class_01.Text == "")
             {
                 MessageBox.Show("Class seçiniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (Type_01.Text == "")
             {
                 MessageBox.Show("Type seçiniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (grade_01.Text == "")
             {
                 MessageBox.Show("Grade seçiniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (en_1.Text == "")
             {
                 MessageBox.Show("Ekipman Enini giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (boy_1.Text == "")
             {
                 MessageBox.Show("Ekipman Boyunu giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (yuk_1.Text == "")
             {
                 MessageBox.Show("Ekipman Yüksekliğini giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (ek_1.Text == "")
             {
                 MessageBox.Show("Ekipman Kütlesini giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
             if (fk_1.Text == "")
             {
                 MessageBox.Show("Fikstür Kütlesini giriniz");
+                System.Windows.Forms.Application.Exit();
+                return;
             }
-            if (efk_1.Text == "")
-            {
-                MessageBox.Show("Eğik Fikstür Toplam Kütlesini giriniz");
-            }
-
+            
+            #endregion
 
 
             //=========================================================================================================================
             //901D TABLO İŞLEMLERİ
             //=========================================================================================================================
             info.Text = "...çekiç yükseklikleri hesaplanıyor.";
+
+            #region
 
             if (pound < 1000)
             {
@@ -443,7 +572,7 @@ namespace _901DD
             }
 
 
-            if (epoun_1 < 1000)
+            if (egiklbs_1 < 1000)
             {
 
                 ecy_1 = 0.75;
@@ -456,7 +585,7 @@ namespace _901DD
 
             else
             {
-                if (1000 <= epoun_1 && pound < 2000)
+                if (1000 <= egiklbs_1 && pound < 2000)
                 {
 
                     ecy_1 = 1.00;
@@ -470,7 +599,7 @@ namespace _901DD
 
                 else
                 {
-                    if (2000 <= epoun_1 && epoun_1 < 3000)
+                    if (2000 <= egiklbs_1 && egiklbs_1 < 3000)
                     {
                         ecy_1 = 1.25;
                         ecy_2 = 2.25;
@@ -482,7 +611,7 @@ namespace _901DD
 
                     else
                     {
-                        if (3000 <= epoun_1 && epoun_1 < 3500)
+                        if (3000 <= egiklbs_1 && egiklbs_1 < 3500)
                         {
 
                             ecy_1 = 1.50;
@@ -495,7 +624,7 @@ namespace _901DD
 
                         else
                         {
-                            if (3500 <= epoun_1 && epoun_1 < 4000)
+                            if (3500 <= egiklbs_1 && egiklbs_1 < 4000)
                             {
                                 ecy_1 = 1.75;
                                 ecy_2 = 2.75;
@@ -507,7 +636,7 @@ namespace _901DD
 
                             else
                             {
-                                if (4000 <= epoun_1 && epoun_1 < 4200)
+                                if (4000 <= egiklbs_1 && egiklbs_1 < 4200)
                                 {
                                     ecy_1 = 2.00;
                                     ecy_2 = 3.00;
@@ -519,7 +648,7 @@ namespace _901DD
 
                                 else
                                 {
-                                    if (4200 <= epoun_1 && epoun_1 < 4400)
+                                    if (4200 <= egiklbs_1 && egiklbs_1 < 4400)
                                     {
                                         ecy_1 = 2.00;
                                         ecy_2 = 3.25;
@@ -531,7 +660,7 @@ namespace _901DD
 
                                     else
                                     {
-                                        if (4400 <= epoun_1 && epoun_1 < 4600)
+                                        if (4400 <= egiklbs_1 && egiklbs_1 < 4600)
                                         {
                                             ecy_1 = 2.00;
                                             ecy_2 = 3.50;
@@ -543,7 +672,7 @@ namespace _901DD
 
                                         else
                                         {
-                                            if (4600 <= epoun_1 && epoun_1 < 4800)
+                                            if (4600 <= egiklbs_1 && egiklbs_1 < 4800)
                                             {
                                                 ecy_1 = 2.25;
                                                 ecy_2 = 3.75;
@@ -554,7 +683,7 @@ namespace _901DD
                                             }
                                             else
                                             {
-                                                if (4800 <= epoun_1 && epoun_1 < 5000)
+                                                if (4800 <= egiklbs_1 && egiklbs_1 < 5000)
                                                 {
                                                     ecy_1 = 2.25;
                                                     ecy_2 = 4.00;
@@ -566,7 +695,7 @@ namespace _901DD
 
                                                 else
                                                 {
-                                                    if (5000 <= epoun_1 && epoun_1 < 5200)
+                                                    if (5000 <= egiklbs_1 && egiklbs_1 < 5200)
                                                     {
                                                         ecy_1 = 2.50;
                                                         ecy_2 = 4.50;
@@ -579,7 +708,7 @@ namespace _901DD
 
                                                     else
                                                     {
-                                                        if (5200 <= epoun_1 && epoun_1 < 5400)
+                                                        if (5200 <= egiklbs_1 && egiklbs_1 < 5400)
                                                         {
                                                             ecy_1 = 2.50;
                                                             ecy_2 = 5.00;
@@ -590,7 +719,7 @@ namespace _901DD
                                                         }
                                                         else
                                                         {
-                                                            if (5400 <= epoun_1 && epoun_1 < 5600)
+                                                            if (5400 <= egiklbs_1 && egiklbs_1 < 5600)
                                                             {
                                                                 ecy_1 = 2.50;
                                                                 ecy_2 = 5.50;
@@ -602,7 +731,7 @@ namespace _901DD
 
                                                             else
                                                             {
-                                                                if (5600 <= epoun_1 && epoun_1 < 6200)
+                                                                if (5600 <= egiklbs_1 && egiklbs_1 < 6200)
 
                                                                 {
                                                                     ecy_1 = 2.75;
@@ -614,7 +743,7 @@ namespace _901DD
                                                                 }
                                                                 else
                                                                 {
-                                                                    if (6200 <= epoun_1 && epoun_1 < 6800)
+                                                                    if (6200 <= egiklbs_1 && egiklbs_1 < 6800)
                                                                     {
                                                                         ecy_1 = 3.00;
                                                                         ecy_2 = 5.50;
@@ -626,7 +755,7 @@ namespace _901DD
 
                                                                     else
                                                                     {
-                                                                        if (6800 <= epoun_1 && epoun_1 < 7400)
+                                                                        if (6800 <= egiklbs_1 && egiklbs_1 < 7400)
                                                                         {
                                                                             ecy_1 = 3.25;
                                                                             ecy_2 = 5.50;
@@ -665,11 +794,13 @@ namespace _901DD
                     }
                 }
             }
+            #endregion
 
             //=========================================================================================================================
             //DEĞİŞKENLERİN DEĞERLERİ ATANDI
             //=========================================================================================================================
-            
+
+            #region
 
             Microsoft.Office.Interop.Word.Application wrd = new Microsoft.Office.Interop.Word.Application();
             Microsoft.Office.Interop.Word.Document doc = wrd.Documents.Open(WrdFile.FileName);
@@ -837,9 +968,19 @@ namespace _901DD
             //=========================================================================================================================
             //Fikstür Kütlesi Değiştir
             //=========================================================================================================================
-            find.Text = "<fikstur_kutle>";
+            find.Text = "<fikstur_kutle>"; //özel imal edilmiş test jigi
             find.Format = true;
             find.Replacement.Text = fikstur_kutle.ToString();
+            find.Execute(Replace: WdReplace.wdReplaceAll);
+
+            find.Text = "<clamps_kutle>"; //dikey test fikstürü beamler, civatalar ve clampler toplamı
+            find.Format = true;
+            find.Replacement.Text = Convert.ToString(clamps);
+            find.Execute(Replace: WdReplace.wdReplaceAll);
+
+            find.Text = "<egik_clamp>"; //eğik fikstür beamler, civatalar ve clampler toplamı
+            find.Format = true;
+            find.Replacement.Text = Convert.ToString(egik_clamp);
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
             //=========================================================================================================================
@@ -863,15 +1004,15 @@ namespace _901DD
             //=========================================================================================================================
             find.Text = "<efikstu_kutle>";
             find.Format = true;
-            find.Replacement.Text = efikstu_kutle.ToString();
+            find.Replacement.Text = egikfiks_kutle.ToString();
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
             //=========================================================================================================================
             //Eğik Fikstür Toplam Kütle Değiştir
             //=========================================================================================================================
-            find.Text = "<etopla_kutle>";
+            find.Text = "<egik_kutle_toplam>";
             find.Format = true;
-            find.Replacement.Text = etopla_kutle.ToString();
+            find.Replacement.Text = egik_kutle_toplam.ToString();
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
             //=========================================================================================================================
@@ -879,7 +1020,7 @@ namespace _901DD
             //=========================================================================================================================
             find.Text = "<egklbs_1>";
             find.Format = true;
-            find.Replacement.Text = epoun_1.ToString();
+            find.Replacement.Text = egiklbs_1.ToString();
             find.Execute(Replace: WdReplace.wdReplaceAll);
 
             progressBar1.Value = 40;
@@ -940,6 +1081,8 @@ namespace _901DD
             progressBar1.Value = 50;
             progressBar1.Update();
 
+            #endregion
+
             //=========================================================================================================================
             //HEADER ve FOOTER DEĞİŞİKLİKLERİ EKLENECEK !!!
             //=========================================================================================================================
@@ -956,11 +1099,12 @@ namespace _901DD
                 headerRange.Find.Execute(Replace: WdReplace.wdReplaceAll);
 
             }
-                
+
 
             //=========================================================================================================================
             //RESİMLERİ EKLEME (hemen öncesine Excel tablolarından jpg oluşturma kodları eklenecek.)!!!
             //=========================================================================================================================
+            #region
             info.Text = "...resimler yükleniyor.";
 
             double width, height, i = 1;
@@ -1004,15 +1148,15 @@ namespace _901DD
             progressBar1.Value = 100;
             progressBar1.Update();
             info.Text = "...rapor hazırlandı.";
-            
-            
+
+            #endregion
 
             //=========================================================================================================================
             //RFQ ADIYLA WORD DOSYASINI KAYDET
             //=========================================================================================================================
             wrd.Visible = false;
             doc.SaveAs2(SaveAs.SelectedPath + @"\" + rfq_1);
-            button6.Visible = true;
+            button6.Enabled = true;
             
 
 
