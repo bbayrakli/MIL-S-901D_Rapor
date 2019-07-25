@@ -770,9 +770,8 @@
             this.info.CausesValidation = false;
             this.info.Location = new System.Drawing.Point(20, 357);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(24, 13);
+            this.info.Size = new System.Drawing.Size(0, 13);
             this.info.TabIndex = 68;
-            this.info.Text = "info";
             // 
             // button6
             // 
