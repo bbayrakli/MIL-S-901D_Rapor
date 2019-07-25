@@ -17,7 +17,9 @@ namespace _901DD
 {
     public partial class Form1 : Form
     {
-        
+        //========================================================================================================================
+        //KISITLAMALAR                                                                                                                 
+        //========================================================================================================================
         #region
 
         double beam160, beam200, beam250, beam_160, beam_200, beam_250;
@@ -106,12 +108,12 @@ namespace _901DD
             }
         }
 
-        #endregion
+       
 
         public Form1()
         {
             InitializeComponent();
-
+            
            
 
         }
@@ -774,6 +776,277 @@ namespace _901DD
 
         }
 
+        private void Etarih_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void En_1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Boy_1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Yuk_1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Ek_1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+       
+
+        private void Fk_1_TextChanged_1(object sender, EventArgs e)
+        {
+           
+            
+            
+                
+            
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Fk_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Ek_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void En_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Boy_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Yuk_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Etarih_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Raptar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Ttarih_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Rfq1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         public void Button3_Click(object sender, EventArgs e)
         {
             
@@ -791,6 +1064,7 @@ namespace _901DD
             SaveAs.ShowDialog();
             SaveDir.Text = SaveAs.SelectedPath;
         }
+        #endregion
 
         public void Button1_Click(object sender, EventArgs e)
         {
@@ -1882,17 +2156,17 @@ namespace _901DD
 
 
             //GEÇİCİ HATIRLATMA NOTLARI==========================================SİLİNECEK===========================> 11.07.2019 23:32
-            //boyutları farklı olması gereken resimler için ayrıca kodlanmalı.
+            //boyutları farklı olması gereken resimler için ayrıca kodlanmalı...OK
             //"pic_n.jpg" formatında rapor_otomasyon klasörü içerisine kaydedilen resimi yeniden boyutlandırıp
-            //rapor_otomasyon\hazirlik içerisine aynı isimle kaydediyor.
-            //rapor_otomasyon\hazirlik içine kaydedilen resmi raporda ilgili değişkenin yerine yapıştırıyor.
-            //uzun sürebilmesi durumu için progress bar eklenecek.
-            //kanal tanımlama görseli ve kalibrasyon sertifikası gibi farklı boyutlarda olabilecek resimler unutulmamalı. 
-            //bu döngüden her resimaynı boyutta çıkar.
-            //Excel grafiklerinden jpg kaydetme, header ve footer konusu Yunus'ta. ondan alacağım.
+            //rapor_otomasyon\hazirlik içerisine aynı isimle kaydediyor...OK
+            //rapor_otomasyon\hazirlik içine kaydedilen resmi raporda ilgili değişkenin yerine yapıştırıyor...OK Bookmark ile çözldü
+            //uzun sürebilmesi durumu için progress bar eklenecek... OK
+            //kanal tanımlama görseli ve kalibrasyon sertifikası gibi farklı boyutlarda olabilecek resimler unutulmamalı.... gereksiz... 
+            //bu döngüden her resimaynı boyutta çıkar... OK döngü değiştirildi.
+            //Excel grafiklerinden jpg kaydetme, header ve footer konusu Yunus'ta. ondan alacağım. OK:
 
             //=======================================================================================================> 12.07.2019 13:31
-            //Eğer resmin yüksekliği genişliğinden büyük ise farklı bir aspect ratio ayarlanabilir.
+            //Eğer resmin yüksekliği genişliğinden büyük ise farklı bir aspect ratio ayarlanabilir....OK
             //=========================================================================================================>===============
 
 
@@ -1909,4 +2183,4 @@ namespace _901DD
 }
 
 
-// toplam kütle hesaplarını gözden geçir. gerekirse beam seçenekleri ekle... kütle hesabı kolaylaşmalı...
+// toplam kütle hesaplarını gözden geçir. gerekirse beam seçenekleri ekle... kütle hesabı kolaylaşmalı... OK

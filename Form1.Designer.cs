@@ -38,7 +38,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.fk_1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Type_01 = new System.Windows.Forms.ComboBox();
@@ -54,14 +53,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.etarih = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ea_1 = new System.Windows.Forms.TextBox();
-            this.ek_1 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.yuk_1 = new System.Windows.Forms.TextBox();
-            this.boy_1 = new System.Windows.Forms.TextBox();
-            this.en_1 = new System.Windows.Forms.TextBox();
             this.eseri1 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -127,7 +123,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button8 = new System.Windows.Forms.Button();
-            this.etarih = new System.Windows.Forms.TextBox();
+            this.fk_1 = new System.Windows.Forms.TextBox();
+            this.ek_1 = new System.Windows.Forms.TextBox();
+            this.en_1 = new System.Windows.Forms.TextBox();
+            this.boy_1 = new System.Windows.Forms.TextBox();
+            this.yuk_1 = new System.Windows.Forms.TextBox();
             this.Kanal.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -229,17 +229,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.Location = new System.Drawing.Point(252, 159);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 13);
+            this.label10.Size = new System.Drawing.Size(22, 13);
             this.label10.TabIndex = 48;
-            this.label10.Text = "kg";
-            // 
-            // fk_1
-            // 
-            this.fk_1.Location = new System.Drawing.Point(119, 156);
-            this.fk_1.Name = "fk_1";
-            this.fk_1.Size = new System.Drawing.Size(127, 20);
-            this.fk_1.TabIndex = 11;
-            this.fk_1.TextChanged += new System.EventHandler(this.Fk_1_TextChanged);
+            this.label10.Text = "kgf";
             // 
             // label4
             // 
@@ -334,6 +326,7 @@
             this.raptar.Size = new System.Drawing.Size(100, 20);
             this.raptar.TabIndex = 21;
             this.raptar.TextChanged += new System.EventHandler(this.Raptar_TextChanged);
+            this.raptar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Raptar_KeyPress);
             // 
             // ttarih
             // 
@@ -342,6 +335,7 @@
             this.ttarih.Size = new System.Drawing.Size(100, 20);
             this.ttarih.TabIndex = 20;
             this.ttarih.TextChanged += new System.EventHandler(this.Ttarih_TextChanged);
+            this.ttarih.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Ttarih_KeyPress);
             // 
             // hzr_1
             // 
@@ -403,18 +397,18 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.yuk_1);
+            this.groupBox1.Controls.Add(this.boy_1);
+            this.groupBox1.Controls.Add(this.en_1);
+            this.groupBox1.Controls.Add(this.ek_1);
+            this.groupBox1.Controls.Add(this.fk_1);
             this.groupBox1.Controls.Add(this.etarih);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.fk_1);
             this.groupBox1.Controls.Add(this.ea_1);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.ek_1);
             this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.yuk_1);
-            this.groupBox1.Controls.Add(this.boy_1);
-            this.groupBox1.Controls.Add(this.en_1);
             this.groupBox1.Controls.Add(this.eseri1);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label5);
@@ -427,6 +421,15 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekipman";
+            // 
+            // etarih
+            // 
+            this.etarih.Location = new System.Drawing.Point(119, 76);
+            this.etarih.Name = "etarih";
+            this.etarih.Size = new System.Drawing.Size(127, 20);
+            this.etarih.TabIndex = 92;
+            this.etarih.TextChanged += new System.EventHandler(this.Etarih_TextChanged);
+            this.etarih.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Etarih_KeyPress);
             // 
             // label16
             // 
@@ -444,9 +447,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.Location = new System.Drawing.Point(252, 131);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 13);
+            this.label11.Size = new System.Drawing.Size(22, 13);
             this.label11.TabIndex = 46;
-            this.label11.Text = "kg";
+            this.label11.Text = "kgf";
             // 
             // ea_1
             // 
@@ -455,14 +458,6 @@
             this.ea_1.Size = new System.Drawing.Size(127, 20);
             this.ea_1.TabIndex = 4;
             this.ea_1.TextChanged += new System.EventHandler(this.Ea_1_TextChanged);
-            // 
-            // ek_1
-            // 
-            this.ek_1.Location = new System.Drawing.Point(119, 128);
-            this.ek_1.Name = "ek_1";
-            this.ek_1.Size = new System.Drawing.Size(127, 20);
-            this.ek_1.TabIndex = 10;
-            this.ek_1.TextChanged += new System.EventHandler(this.Ek_1_TextChanged);
             // 
             // label22
             // 
@@ -473,30 +468,6 @@
             this.label22.Size = new System.Drawing.Size(66, 13);
             this.label22.TabIndex = 44;
             this.label22.Text = "Ekipman Adı";
-            // 
-            // yuk_1
-            // 
-            this.yuk_1.Location = new System.Drawing.Point(207, 102);
-            this.yuk_1.Name = "yuk_1";
-            this.yuk_1.Size = new System.Drawing.Size(39, 20);
-            this.yuk_1.TabIndex = 9;
-            this.yuk_1.TextChanged += new System.EventHandler(this.Yuk_1_TextChanged);
-            // 
-            // boy_1
-            // 
-            this.boy_1.Location = new System.Drawing.Point(163, 102);
-            this.boy_1.Name = "boy_1";
-            this.boy_1.Size = new System.Drawing.Size(38, 20);
-            this.boy_1.TabIndex = 8;
-            this.boy_1.TextChanged += new System.EventHandler(this.Boy_1_TextChanged);
-            // 
-            // en_1
-            // 
-            this.en_1.Location = new System.Drawing.Point(119, 102);
-            this.en_1.Name = "en_1";
-            this.en_1.Size = new System.Drawing.Size(38, 20);
-            this.en_1.TabIndex = 7;
-            this.en_1.TextChanged += new System.EventHandler(this.En_1_TextChanged);
             // 
             // eseri1
             // 
@@ -1165,12 +1136,14 @@
             // rfq1
             // 
             this.rfq1.AcceptsReturn = true;
+            this.rfq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rfq1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rfq1.Location = new System.Drawing.Point(125, 6);
             this.rfq1.Name = "rfq1";
             this.rfq1.Size = new System.Drawing.Size(82, 20);
             this.rfq1.TabIndex = 1;
             this.rfq1.TextChanged += new System.EventHandler(this.Rfq1_TextChanged);
+            this.rfq1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Rfq1_KeyPress);
             // 
             // textBox1
             // 
@@ -1210,12 +1183,50 @@
             this.button8.Text = "YARDIM";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // etarih
+            // fk_1
             // 
-            this.etarih.Location = new System.Drawing.Point(119, 76);
-            this.etarih.Name = "etarih";
-            this.etarih.Size = new System.Drawing.Size(127, 20);
-            this.etarih.TabIndex = 92;
+            this.fk_1.Location = new System.Drawing.Point(119, 156);
+            this.fk_1.Name = "fk_1";
+            this.fk_1.Size = new System.Drawing.Size(126, 20);
+            this.fk_1.TabIndex = 95;
+            this.fk_1.TextChanged += new System.EventHandler(this.Fk_1_TextChanged_1);
+            this.fk_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Fk_1_KeyPress);
+            // 
+            // ek_1
+            // 
+            this.ek_1.Location = new System.Drawing.Point(119, 128);
+            this.ek_1.Name = "ek_1";
+            this.ek_1.Size = new System.Drawing.Size(126, 20);
+            this.ek_1.TabIndex = 96;
+            this.ek_1.TextChanged += new System.EventHandler(this.Ek_1_TextChanged_1);
+            this.ek_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Ek_1_KeyPress);
+            // 
+            // en_1
+            // 
+            this.en_1.Location = new System.Drawing.Point(119, 102);
+            this.en_1.Name = "en_1";
+            this.en_1.Size = new System.Drawing.Size(38, 20);
+            this.en_1.TabIndex = 97;
+            this.en_1.TextChanged += new System.EventHandler(this.En_1_TextChanged_1);
+            this.en_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.En_1_KeyPress);
+            // 
+            // boy_1
+            // 
+            this.boy_1.Location = new System.Drawing.Point(163, 102);
+            this.boy_1.Name = "boy_1";
+            this.boy_1.Size = new System.Drawing.Size(38, 20);
+            this.boy_1.TabIndex = 98;
+            this.boy_1.TextChanged += new System.EventHandler(this.Boy_1_TextChanged_1);
+            this.boy_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Boy_1_KeyPress);
+            // 
+            // yuk_1
+            // 
+            this.yuk_1.Location = new System.Drawing.Point(207, 102);
+            this.yuk_1.Name = "yuk_1";
+            this.yuk_1.Size = new System.Drawing.Size(38, 20);
+            this.yuk_1.TabIndex = 99;
+            this.yuk_1.TextChanged += new System.EventHandler(this.Yuk_1_TextChanged_1);
+            this.yuk_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Yuk_1_KeyPress);
             // 
             // Form1
             // 
@@ -1280,7 +1291,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox fk_1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
@@ -1296,11 +1306,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox ea_1;
-        private System.Windows.Forms.TextBox ek_1;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox yuk_1;
-        private System.Windows.Forms.TextBox boy_1;
-        private System.Windows.Forms.TextBox en_1;
         private System.Windows.Forms.TextBox eseri1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label5;
@@ -1371,6 +1377,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox etarih;
+        private System.Windows.Forms.TextBox yuk_1;
+        private System.Windows.Forms.TextBox boy_1;
+        private System.Windows.Forms.TextBox en_1;
+        private System.Windows.Forms.TextBox ek_1;
+        private System.Windows.Forms.TextBox fk_1;
     }
 }
 

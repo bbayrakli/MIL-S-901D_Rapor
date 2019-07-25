@@ -19,6 +19,5 @@ C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.csproj.Gener
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.csproj.CoreCompileInputs.cache
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.exe
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\901DD.pdb
-C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.UserControl1.resources
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.Form1.resources
 C:\Users\bbayrakli\Desktop\My_Repo\MIL-S-901D_Rapor\obj\Debug\_901DD.Form2.resources
