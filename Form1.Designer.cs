@@ -53,6 +53,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.yuk_1 = new System.Windows.Forms.TextBox();
+            this.boy_1 = new System.Windows.Forms.TextBox();
+            this.en_1 = new System.Windows.Forms.TextBox();
+            this.ek_1 = new System.Windows.Forms.TextBox();
+            this.fk_1 = new System.Windows.Forms.TextBox();
             this.etarih = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -123,11 +128,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button8 = new System.Windows.Forms.Button();
-            this.fk_1 = new System.Windows.Forms.TextBox();
-            this.ek_1 = new System.Windows.Forms.TextBox();
-            this.en_1 = new System.Windows.Forms.TextBox();
-            this.boy_1 = new System.Windows.Forms.TextBox();
-            this.yuk_1 = new System.Windows.Forms.TextBox();
             this.Kanal.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -421,6 +421,51 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekipman";
+            // 
+            // yuk_1
+            // 
+            this.yuk_1.Location = new System.Drawing.Point(207, 102);
+            this.yuk_1.Name = "yuk_1";
+            this.yuk_1.Size = new System.Drawing.Size(38, 20);
+            this.yuk_1.TabIndex = 99;
+            this.yuk_1.TextChanged += new System.EventHandler(this.Yuk_1_TextChanged_1);
+            this.yuk_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Yuk_1_KeyPress);
+            // 
+            // boy_1
+            // 
+            this.boy_1.Location = new System.Drawing.Point(163, 102);
+            this.boy_1.Name = "boy_1";
+            this.boy_1.Size = new System.Drawing.Size(38, 20);
+            this.boy_1.TabIndex = 98;
+            this.boy_1.TextChanged += new System.EventHandler(this.Boy_1_TextChanged_1);
+            this.boy_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Boy_1_KeyPress);
+            // 
+            // en_1
+            // 
+            this.en_1.Location = new System.Drawing.Point(119, 102);
+            this.en_1.Name = "en_1";
+            this.en_1.Size = new System.Drawing.Size(38, 20);
+            this.en_1.TabIndex = 97;
+            this.en_1.TextChanged += new System.EventHandler(this.En_1_TextChanged_1);
+            this.en_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.En_1_KeyPress);
+            // 
+            // ek_1
+            // 
+            this.ek_1.Location = new System.Drawing.Point(119, 128);
+            this.ek_1.Name = "ek_1";
+            this.ek_1.Size = new System.Drawing.Size(126, 20);
+            this.ek_1.TabIndex = 96;
+            this.ek_1.TextChanged += new System.EventHandler(this.Ek_1_TextChanged_1);
+            this.ek_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Ek_1_KeyPress);
+            // 
+            // fk_1
+            // 
+            this.fk_1.Location = new System.Drawing.Point(119, 156);
+            this.fk_1.Name = "fk_1";
+            this.fk_1.Size = new System.Drawing.Size(126, 20);
+            this.fk_1.TabIndex = 95;
+            this.fk_1.TextChanged += new System.EventHandler(this.Fk_1_TextChanged_1);
+            this.fk_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Fk_1_KeyPress);
             // 
             // etarih
             // 
@@ -861,7 +906,7 @@
             this.groupBox4.Controls.Add(this.label29);
             this.groupBox4.Controls.Add(this.label32);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox4.Location = new System.Drawing.Point(917, 150);
+            this.groupBox4.Location = new System.Drawing.Point(917, 32);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(224, 271);
             this.groupBox4.TabIndex = 80;
@@ -1182,58 +1227,14 @@
             this.button8.TabIndex = 91;
             this.button8.Text = "YARDIM";
             this.button8.UseVisualStyleBackColor = true;
-            // 
-            // fk_1
-            // 
-            this.fk_1.Location = new System.Drawing.Point(119, 156);
-            this.fk_1.Name = "fk_1";
-            this.fk_1.Size = new System.Drawing.Size(126, 20);
-            this.fk_1.TabIndex = 95;
-            this.fk_1.TextChanged += new System.EventHandler(this.Fk_1_TextChanged_1);
-            this.fk_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Fk_1_KeyPress);
-            // 
-            // ek_1
-            // 
-            this.ek_1.Location = new System.Drawing.Point(119, 128);
-            this.ek_1.Name = "ek_1";
-            this.ek_1.Size = new System.Drawing.Size(126, 20);
-            this.ek_1.TabIndex = 96;
-            this.ek_1.TextChanged += new System.EventHandler(this.Ek_1_TextChanged_1);
-            this.ek_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Ek_1_KeyPress);
-            // 
-            // en_1
-            // 
-            this.en_1.Location = new System.Drawing.Point(119, 102);
-            this.en_1.Name = "en_1";
-            this.en_1.Size = new System.Drawing.Size(38, 20);
-            this.en_1.TabIndex = 97;
-            this.en_1.TextChanged += new System.EventHandler(this.En_1_TextChanged_1);
-            this.en_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.En_1_KeyPress);
-            // 
-            // boy_1
-            // 
-            this.boy_1.Location = new System.Drawing.Point(163, 102);
-            this.boy_1.Name = "boy_1";
-            this.boy_1.Size = new System.Drawing.Size(38, 20);
-            this.boy_1.TabIndex = 98;
-            this.boy_1.TextChanged += new System.EventHandler(this.Boy_1_TextChanged_1);
-            this.boy_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Boy_1_KeyPress);
-            // 
-            // yuk_1
-            // 
-            this.yuk_1.Location = new System.Drawing.Point(207, 102);
-            this.yuk_1.Name = "yuk_1";
-            this.yuk_1.Size = new System.Drawing.Size(38, 20);
-            this.yuk_1.TabIndex = 99;
-            this.yuk_1.TextChanged += new System.EventHandler(this.Yuk_1_TextChanged_1);
-            this.yuk_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Yuk_1_KeyPress);
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1152, 425);
+            this.ClientSize = new System.Drawing.Size(918, 425);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);

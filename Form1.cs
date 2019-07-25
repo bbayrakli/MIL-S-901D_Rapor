@@ -1047,6 +1047,20 @@ namespace _901DD
             }
         }
 
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            if (groupBox4.Visible)
+            {
+                groupBox4.Visible = false;
+                this.Size = new Size(934, 464);
+            }
+            else
+            {
+                groupBox4.Visible = true;
+            }
+
+        }
+
         public void Button3_Click(object sender, EventArgs e)
         {
             
