@@ -2037,9 +2037,9 @@ namespace _901DD
             //=========================================================================================================================
             //EXCEL GRAFİKLERİNİ .JPG KAYDETME
             //=========================================================================================================================
+            #region
 
-                
-                Microsoft.Office.Interop.Excel.Application exc = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel.Application exc = new Microsoft.Office.Interop.Excel.Application();
                 exc.Visible = false;
                 exc.Workbooks.Open(textBox1.Text);
                 Worksheet sheet = exc.Worksheets[1];
@@ -2058,10 +2058,12 @@ namespace _901DD
                     }
                 }
                 exc.Workbooks.Close();
-            
+
+            #endregion
             //=========================================================================================================================
             //GRAFİKLERİ EKLEME
             //=========================================================================================================================
+            #region
             double graphwidth, graphheight, j = 1;
             double p;
 
@@ -2095,6 +2097,7 @@ namespace _901DD
                
 
             }
+            #endregion
 
             //=========================================================================================================================
             //RESİMLERİ EKLEME 
