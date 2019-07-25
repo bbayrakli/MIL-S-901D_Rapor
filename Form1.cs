@@ -17,6 +17,7 @@ namespace _901DD
 {
     public partial class Form1 : Form
     {
+        
         #region
 
         double beam160, beam200, beam250, beam_160, beam_200, beam_250;
@@ -110,9 +111,11 @@ namespace _901DD
         public Form1()
         {
             InitializeComponent();
-            
-            
+
+           
+
         }
+         
         public void Button2_Click_1(object sender, EventArgs e)
         {
 
@@ -124,6 +127,651 @@ namespace _901DD
         {
             openFileDialog1.ShowDialog();
             textBox1.Text = openFileDialog1.FileName;
+        }
+
+        private void Rfq1_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text)||
+                graPath.Text=="" ||
+                textBox1.Text=="" ||
+                FPath.Text=="" ||
+                picPath.Text==""||
+                SaveDir.Text==""
+                )
+
+
+            { 
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Ma_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Musteri_adresi_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Ea_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Eseri1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Etarih_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void En_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Boy_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Yuk_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Ek_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Fk_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Ttarih_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Raptar_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Hzr_1_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Grade_01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Class_01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void Type_01_SelectedIndexChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void WrdFile_FileOk(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void FPath_TextChanged(object sender, EventArgs e)
+        {
+             if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void PicPath_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(fk_1.Text) || string.IsNullOrWhiteSpace(ek_1.Text) || string.IsNullOrWhiteSpace(ma_1.Text) || string.IsNullOrWhiteSpace(musteri_adresi.Text) || string.IsNullOrWhiteSpace(ea_1.Text) ||
+                string.IsNullOrWhiteSpace(eseri1.Text) ||
+                string.IsNullOrWhiteSpace(en_1.Text) ||
+                string.IsNullOrWhiteSpace(boy_1.Text) ||
+                string.IsNullOrWhiteSpace(yuk_1.Text) ||
+                string.IsNullOrWhiteSpace(etarih.Text) ||
+                string.IsNullOrWhiteSpace(ttarih.Text) ||
+                string.IsNullOrWhiteSpace(raptar.Text) ||
+                string.IsNullOrWhiteSpace(hzr_1.Text) ||
+                string.IsNullOrWhiteSpace(Type_01.Text) ||
+                string.IsNullOrWhiteSpace(class_01.Text) ||
+                string.IsNullOrWhiteSpace(grade_01.Text) ||
+                string.IsNullOrWhiteSpace(rfq1.Text) ||
+                graPath.Text == "" ||
+                textBox1.Text == "" ||
+                FPath.Text == "" ||
+                picPath.Text == "" ||
+                SaveDir.Text == ""
+                )
+
+
+            {
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+        }
+
+        private void GraPath_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         public void Button3_Click(object sender, EventArgs e)
@@ -152,6 +800,8 @@ namespace _901DD
 
             double ekipman_kutle, fikstur_kutle, toplam_kutle, egikfiks_kutle, egik_kutle_toplam, clamps, egik_clamp, ekpmfkst,
                     dcy_1, dcy_2, dcy_3, ecy_1, ecy_2, ecy_3, dmy_1_m, dmy_2_m, dmy_3_m, emy_1_m, emy_2_m, emy_3_m;
+
+            
 
             progressBar1.Value = 10;
             progressBar1.Update();
@@ -1254,6 +1904,7 @@ namespace _901DD
             
 
         }
+        
     }
 }
 

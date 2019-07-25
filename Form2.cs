@@ -24,7 +24,7 @@ namespace _901DD
         {
 
         }
-        string username = "burak", parola = "Kuleli5075";
+        string user_1 = "burak", parola_1 = "Kuleli5075";
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -40,7 +40,7 @@ namespace _901DD
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == username && textBox2.Text == parola)
+            if (textBox1.Text == user_1 && textBox2.Text == parola_1)
             {
                 this.Hide();
                 Form Form1 = new Form1();

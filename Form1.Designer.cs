@@ -54,7 +54,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.etarih = new System.Windows.Forms.MaskedTextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ea_1 = new System.Windows.Forms.TextBox();
@@ -127,6 +126,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button8 = new System.Windows.Forms.Button();
+            this.etarih = new System.Windows.Forms.TextBox();
             this.Kanal.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -238,6 +239,7 @@
             this.fk_1.Name = "fk_1";
             this.fk_1.Size = new System.Drawing.Size(127, 20);
             this.fk_1.TabIndex = 11;
+            this.fk_1.TextChanged += new System.EventHandler(this.Fk_1_TextChanged);
             // 
             // label4
             // 
@@ -284,6 +286,7 @@
             this.Type_01.Name = "Type_01";
             this.Type_01.Size = new System.Drawing.Size(100, 21);
             this.Type_01.TabIndex = 81;
+            this.Type_01.SelectedIndexChanged += new System.EventHandler(this.Type_01_SelectedIndexChanged);
             // 
             // class_01
             // 
@@ -297,6 +300,7 @@
             this.class_01.Name = "class_01";
             this.class_01.Size = new System.Drawing.Size(100, 21);
             this.class_01.TabIndex = 81;
+            this.class_01.SelectedIndexChanged += new System.EventHandler(this.Class_01_SelectedIndexChanged);
             // 
             // grade_01
             // 
@@ -311,6 +315,7 @@
             this.grade_01.Name = "grade_01";
             this.grade_01.Size = new System.Drawing.Size(100, 21);
             this.grade_01.TabIndex = 81;
+            this.grade_01.SelectedIndexChanged += new System.EventHandler(this.Grade_01_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -328,6 +333,7 @@
             this.raptar.Name = "raptar";
             this.raptar.Size = new System.Drawing.Size(100, 20);
             this.raptar.TabIndex = 21;
+            this.raptar.TextChanged += new System.EventHandler(this.Raptar_TextChanged);
             // 
             // ttarih
             // 
@@ -335,6 +341,7 @@
             this.ttarih.Name = "ttarih";
             this.ttarih.Size = new System.Drawing.Size(100, 20);
             this.ttarih.TabIndex = 20;
+            this.ttarih.TextChanged += new System.EventHandler(this.Ttarih_TextChanged);
             // 
             // hzr_1
             // 
@@ -342,6 +349,7 @@
             this.hzr_1.Name = "hzr_1";
             this.hzr_1.Size = new System.Drawing.Size(100, 20);
             this.hzr_1.TabIndex = 22;
+            this.hzr_1.TextChanged += new System.EventHandler(this.Hzr_1_TextChanged);
             // 
             // label6
             // 
@@ -420,14 +428,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekipman";
             // 
-            // etarih
-            // 
-            this.etarih.Location = new System.Drawing.Point(119, 76);
-            this.etarih.Mask = "00/00/0000";
-            this.etarih.Name = "etarih";
-            this.etarih.Size = new System.Drawing.Size(127, 20);
-            this.etarih.TabIndex = 49;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -454,6 +454,7 @@
             this.ea_1.Name = "ea_1";
             this.ea_1.Size = new System.Drawing.Size(127, 20);
             this.ea_1.TabIndex = 4;
+            this.ea_1.TextChanged += new System.EventHandler(this.Ea_1_TextChanged);
             // 
             // ek_1
             // 
@@ -461,6 +462,7 @@
             this.ek_1.Name = "ek_1";
             this.ek_1.Size = new System.Drawing.Size(127, 20);
             this.ek_1.TabIndex = 10;
+            this.ek_1.TextChanged += new System.EventHandler(this.Ek_1_TextChanged);
             // 
             // label22
             // 
@@ -478,6 +480,7 @@
             this.yuk_1.Name = "yuk_1";
             this.yuk_1.Size = new System.Drawing.Size(39, 20);
             this.yuk_1.TabIndex = 9;
+            this.yuk_1.TextChanged += new System.EventHandler(this.Yuk_1_TextChanged);
             // 
             // boy_1
             // 
@@ -485,6 +488,7 @@
             this.boy_1.Name = "boy_1";
             this.boy_1.Size = new System.Drawing.Size(38, 20);
             this.boy_1.TabIndex = 8;
+            this.boy_1.TextChanged += new System.EventHandler(this.Boy_1_TextChanged);
             // 
             // en_1
             // 
@@ -492,6 +496,7 @@
             this.en_1.Name = "en_1";
             this.en_1.Size = new System.Drawing.Size(38, 20);
             this.en_1.TabIndex = 7;
+            this.en_1.TextChanged += new System.EventHandler(this.En_1_TextChanged);
             // 
             // eseri1
             // 
@@ -499,6 +504,7 @@
             this.eseri1.Name = "eseri1";
             this.eseri1.Size = new System.Drawing.Size(127, 20);
             this.eseri1.TabIndex = 5;
+            this.eseri1.TextChanged += new System.EventHandler(this.Eseri1_TextChanged);
             // 
             // label17
             // 
@@ -570,6 +576,7 @@
             this.ma_1.Name = "ma_1";
             this.ma_1.Size = new System.Drawing.Size(386, 20);
             this.ma_1.TabIndex = 2;
+            this.ma_1.TextChanged += new System.EventHandler(this.Ma_1_TextChanged);
             // 
             // musteri_adresi
             // 
@@ -578,6 +585,7 @@
             this.musteri_adresi.Size = new System.Drawing.Size(386, 54);
             this.musteri_adresi.TabIndex = 3;
             this.musteri_adresi.Text = "";
+            this.musteri_adresi.TextChanged += new System.EventHandler(this.Musteri_adresi_TextChanged);
             // 
             // label2
             // 
@@ -601,6 +609,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(731, 157);
             this.button1.Name = "button1";
@@ -613,6 +622,7 @@
             // WrdFile
             // 
             this.WrdFile.Title = "Word Şablonu Seç";
+            this.WrdFile.FileOk += new System.ComponentModel.CancelEventHandler(this.WrdFile_FileOk);
             // 
             // button2
             // 
@@ -636,6 +646,7 @@
             this.FPath.Size = new System.Drawing.Size(286, 20);
             this.FPath.TabIndex = 59;
             this.FPath.Text = "Şablonu Göster";
+            this.FPath.TextChanged += new System.EventHandler(this.FPath_TextChanged);
             // 
             // jpgFolder
             // 
@@ -663,6 +674,7 @@
             this.picPath.Size = new System.Drawing.Size(286, 20);
             this.picPath.TabIndex = 61;
             this.picPath.Text = "Fotoğraflar";
+            this.picPath.TextChanged += new System.EventHandler(this.PicPath_TextChanged);
             // 
             // button4
             // 
@@ -690,6 +702,7 @@
             this.graPath.Size = new System.Drawing.Size(286, 20);
             this.graPath.TabIndex = 63;
             this.graPath.Text = "Grafikler";
+            this.graPath.TextChanged += new System.EventHandler(this.GraPath_TextChanged);
             // 
             // SaveAs
             // 
@@ -883,6 +896,7 @@
             this.groupBox4.TabIndex = 80;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "FOTOĞRAF AÇIKLAMALARI";
+            this.groupBox4.Visible = false;
             // 
             // label39
             // 
@@ -1156,6 +1170,7 @@
             this.rfq1.Name = "rfq1";
             this.rfq1.Size = new System.Drawing.Size(82, 20);
             this.rfq1.TabIndex = 1;
+            this.rfq1.TextChanged += new System.EventHandler(this.Rfq1_TextChanged);
             // 
             // textBox1
             // 
@@ -1185,11 +1200,30 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Title = "Excel Dosyası Seç";
             // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button8.Location = new System.Drawing.Point(213, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 91;
+            this.button8.Text = "YARDIM";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // etarih
+            // 
+            this.etarih.Location = new System.Drawing.Point(119, 76);
+            this.etarih.Name = "etarih";
+            this.etarih.Size = new System.Drawing.Size(127, 20);
+            this.etarih.TabIndex = 92;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1152, 425);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox6);
@@ -1335,7 +1369,8 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox etarih;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox etarih;
     }
 }
 
